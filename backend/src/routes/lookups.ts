@@ -31,4 +31,14 @@ router.get("/lubricant-types", async (req, res) => {
   res.json({ lubricantTypes: types });
 });
 
+// GET /api/lookups/technicians — for the route-assignment picker. Deliberately NOT gated behind
+// the Settings screen: an Engineer with manageRoutes capability needs this without full user-admin access.
+router.get("/technicians", async (req, res) => {
+  const user = req.user!;
+  const where: any = { title: { name: { contains: "Technician" } } };
+  if (user.dataScope !== "ALL_ORGS") where.organizationId = user.organizationId ?? "__none__";
+  const technicians = await prisma.user.findMany({ where, orderBy: { name: "asc" } });
+  res.json({ technicians: technicians.map((t) => ({ id: t.id, name: t.name })) });
+});
+
 export default router;

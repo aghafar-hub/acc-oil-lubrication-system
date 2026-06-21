@@ -8,6 +8,11 @@ import { LpDetailsPage } from "./pages/LpDetailsPage";
 import { PendingApprovalsPage } from "./pages/PendingApprovalsPage";
 import { ActionPlansPage } from "./pages/ActionPlansPage";
 import { NotificationsPage } from "./pages/NotificationsPage";
+import { OilSampleCenterPage } from "./pages/OilSampleCenterPage";
+import { RouteCenterPage } from "./pages/RouteCenterPage";
+import { OilManagementPage } from "./pages/OilManagementPage";
+import { ReportsPage } from "./pages/ReportsPage";
+import { SettingsPage } from "./pages/SettingsPage";
 import { ComingSoonPage } from "./pages/ComingSoonPage";
 
 function ProtectedRoutes() {
@@ -28,12 +33,12 @@ function ProtectedRoutes() {
         <Route path="/approvals" element={<PendingApprovalsPage />} />
         <Route path="/action-plans" element={<ActionPlansPage />} />
         <Route path="/notifications" element={<NotificationsPage />} />
-        <Route path="/routes" element={<ComingSoonPage titleKey="nav.routeCenter" />} />
+        <Route path="/routes" element={<RouteCenterPage />} />
         <Route path="/timeline" element={<ComingSoonPage titleKey="nav.timeline" />} />
-        <Route path="/oil-samples" element={<ComingSoonPage titleKey="nav.oilSampleCenter" />} />
-        <Route path="/oil-management" element={<ComingSoonPage titleKey="nav.oilManagement" />} />
-        <Route path="/reports" element={<ComingSoonPage titleKey="nav.reports" />} />
-        <Route path="/settings" element={<ComingSoonPage titleKey="nav.settings" />} />
+        <Route path="/oil-samples" element={<OilSampleCenterPage />} />
+        <Route path="/oil-management" element={<OilManagementPage />} />
+        <Route path="/reports" element={<ReportsPage />} />
+        <Route path="/settings" element={<SettingsPage />} />
         <Route path="*" element={<Navigate to="/dashboard" replace />} />
       </Route>
     </Routes>

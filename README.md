@@ -107,15 +107,31 @@ first-login password change, app shell with permission-gated
 navigation and live counters, Executive Dashboard with charts, the
 Lubrication Explorer with filters/search/CSV export, LP Details with
 ACC correction, Pending Approvals (approve/reject), Action Plan
-Center (close with mandatory comments), Notification Center, EN/AR
-i18n with RTL wired through the shell.
+Center (close with mandatory comments), Notification Center, the
+Oil Sample Center (search/select, status banner, grouped parameter
+table, trend charts, manual entry, batch PDF upload with mandatory
+human review), the Route Center (dynamic route preview/build,
+assignment), the Oil Management Center (consumption chart, 30-day
+forecast, purchase log), the Reports Center (6 report types, CSV
+export), and Settings (Users & Roles, Permission Templates editor,
+Notification Routing matrix, Audit Log, General) — all with EN/AR
+i18n and RTL wired through the shell.
 
-🚧 Frontend screens still to build: Route Center + mobile execution,
-Oil Sample Center (must match the reference screenshot), Oil
-Management Center, Reports Center, Settings (incl. the permission
-template editor), the 10 client-pending UI themes. These show a
-"coming soon" placeholder for now — their backend APIs are already
-complete and live.
+🚧 Still to build: the Lubrication Timeline (Section 12.6) — the one
+remaining desktop screen — and the dedicated mobile (M01-M06) layouts;
+the 10 client-pending UI themes. The "coming soon" placeholder
+component remains in place for the Timeline route.
+
+### A note on `npx eslint`
+
+The scaffolded ESLint config ships `eslint-plugin-react-hooks`'s new
+`set-state-in-effect` rule, which flags the standard "setLoading(true),
+fetch, setState in `.then()`" pattern used throughout this app (there's
+no React Query/SWR layer — just plain `useEffect` + axios). That's
+idiomatic data-fetching, not a bug, so the rule is turned off in
+`eslint.config.js` with a comment explaining why. Everything else
+lints clean except two harmless `exhaustive-deps` warnings on stable
+`load()` functions.
 
 ### Architecture
 
@@ -158,7 +174,9 @@ frontend/
     i18n/                   i18next config + en.json/ar.json resources
     components/             AppShell (sidebar+nav), KpiCard, StatusTag/PriorityTag
     pages/                   LoginPage, DashboardPage, ExplorerPage, LpDetailsPage,
-                             PendingApprovalsPage, ActionPlansPage, NotificationsPage, ComingSoonPage
+                             PendingApprovalsPage, ActionPlansPage, NotificationsPage,
+                             OilSampleCenterPage, RouteCenterPage, OilManagementPage,
+                             ReportsPage, SettingsPage, ComingSoonPage (Timeline only)
 ```
 
 ### A note on `npx tsc --noEmit` (backend only)

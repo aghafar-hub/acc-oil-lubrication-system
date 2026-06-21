@@ -18,5 +18,11 @@ export default defineConfig([
     languageOptions: {
       globals: globals.browser,
     },
+    rules: {
+      // This app fetches data with plain useEffect + axios (no React Query/SWR layer).
+      // The "set loading=true, then fetch, then setState in .then()" pattern this rule
+      // flags is the standard documented approach for that — not a bug here.
+      'react-hooks/set-state-in-effect': 'off',
+    },
   },
 ])

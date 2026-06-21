@@ -25,7 +25,7 @@ export function LoginPage() {
     setSubmitting(true);
     try {
       await login(email, password);
-    } catch (err) {
+    } catch {
       setError(t("login.invalidCredentials"));
     } finally {
       setSubmitting(false);
