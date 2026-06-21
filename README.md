@@ -117,6 +117,15 @@ export), and Settings (Users & Roles, Permission Templates editor,
 Notification Routing matrix, Audit Log, General) — all with EN/AR
 i18n and RTL wired through the shell.
 
+Oil Sample Center note: the parameter table is a samples-as-columns
+comparison matrix (sample dates across the top, parameters as rows,
+each cell color-coded by its own status independent of the row/sample)
+— matching the structure called out in Section 12.7 as "must replicate
+the client's reference screenshot," not a simpler one-sample-at-a-time
+table. The Sample Timeline list shows key readings (Visc/Fe/Si/Water)
+inline per spec, and an Add Action button creates a manual Action Plan
+Center entry scoped to the equipment, also per spec.
+
 🚧 Still to build: the Lubrication Timeline (Section 12.6) — the one
 remaining desktop screen — and the dedicated mobile (M01-M06) layouts;
 the 10 client-pending UI themes. The "coming soon" placeholder

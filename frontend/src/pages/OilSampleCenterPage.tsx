@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Search, FlaskConical, Upload, Plus, AlertTriangle } from "lucide-react";
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, Legend } from "recharts";
@@ -30,7 +30,7 @@ interface SampleDetail {
   recommendationsText: string | null;
   uploadedBy: string | null;
   lp: { id: string; lpIdCode: string; pointDescription: string };
-  equipment: { code: string; name: string; area: string | null; contractor: string | null };
+  equipment: { id: string; code: string; name: string; area: string | null; contractor: string | null };
   lubricant: string | null;
   parameterGroups: Record<string, { key: string; label: string; unit: string | null; value: number | null; status: string }[]>;
 }
@@ -60,6 +60,7 @@ export function OilSampleCenterPage() {
 
   const [showAddModal, setShowAddModal] = useState(false);
   const [showUploadModal, setShowUploadModal] = useState(false);
+  const [showAddAction, setShowAddAction] = useState(false);
 
   // Equipment/LP search (proxies the Explorer search, filtered to OA-required points)
   useEffect(() => {
@@ -180,34 +181,11 @@ export function OilSampleCenterPage() {
               </InfoPanel>
             </div>
 
-            {/* Parameter table grouped */}
+            {/* Parameter table — sample dates as columns, matching the reference report structure */}
             <div className="bg-white rounded-md border border-[var(--color-line)] p-4">
               <h2 className="text-sm font-semibold uppercase tracking-wide text-[var(--color-ink-muted)] mb-3">Parameters</h2>
-              <div className="grid grid-cols-2 gap-x-8 gap-y-5">
-                {PARAM_GROUP_ORDER.map((group) => {
-                  const params = detail.parameterGroups[group];
-                  if (!params || params.length === 0) return null;
-                  return (
-                    <div key={group}>
-                      <h3 className="text-xs font-semibold uppercase tracking-wide text-[var(--color-ink-muted)] mb-2">{PARAM_GROUP_LABELS[group]}</h3>
-                      <table className="w-full text-sm">
-                        <tbody>
-                          {params.map((p) => (
-                            <tr key={p.key} className="border-b border-[var(--color-line)] last:border-0">
-                              <td className="py-1.5 text-[var(--color-ink-muted)]">{p.label}</td>
-                              <td className="py-1.5 text-right font-[var(--font-mono)]" style={{ fontFamily: "var(--font-mono)" }}>
-                                {p.value != null ? `${p.value} ${p.unit ?? ""}` : "—"}
-                              </td>
-                              <td className="py-1.5 text-right w-20">
-                                <span className="status-tag" style={{ color: STATUS_COLOR[p.status], background: STATUS_BG[p.status], fontSize: "0.62rem" }}>{p.status}</span>
-                              </td>
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
-                    </div>
-                  );
-                })}
+              <div className="overflow-x-auto scrollbar-thin">
+                <ParameterMatrix samples={samples} trend={trend} selectedSampleId={selectedSampleId} onSelectSample={setSelectedSampleId} />
               </div>
             </div>
 
@@ -232,20 +210,42 @@ export function OilSampleCenterPage() {
             <div className="bg-white rounded-md border border-[var(--color-line)] p-4">
               <h2 className="text-sm font-semibold uppercase tracking-wide text-[var(--color-ink-muted)] mb-3">Sample Timeline</h2>
               <div className="flex flex-col gap-1 max-h-80 overflow-auto scrollbar-thin">
-                {samples.map((s) => (
-                  <button
-                    key={s.id} onClick={() => setSelectedSampleId(s.id)}
-                    className={`text-left px-2.5 py-2 rounded text-sm flex items-center justify-between ${s.id === selectedSampleId ? "bg-[var(--color-canvas)]" : "hover:bg-[var(--color-canvas)]"}`}
-                  >
-                    <span>{new Date(s.sampledDate).toLocaleDateString()}</span>
-                    <span className="status-tag" style={{ color: STATUS_COLOR[s.reportStatus], background: STATUS_BG[s.reportStatus], fontSize: "0.62rem" }}>{s.reportStatus}</span>
-                  </button>
-                ))}
+                {samples.map((s) => {
+                  const point = trend.find((t) => t.sampledDate === s.sampledDate);
+                  const lookup = (key: string) => point?.values.find((v) => v.key === key)?.value;
+                  const keyReadings = [
+                    ["Visc", lookup("Visc40")],
+                    ["Fe", lookup("Fe")],
+                    ["Si", lookup("Si")],
+                    ["Water", lookup("Water")],
+                  ].filter(([, v]) => v != null) as [string, number][];
+                  return (
+                    <button
+                      key={s.id} onClick={() => setSelectedSampleId(s.id)}
+                      className={`text-left px-2.5 py-2 rounded text-sm ${s.id === selectedSampleId ? "bg-[var(--color-canvas)]" : "hover:bg-[var(--color-canvas)]"}`}
+                    >
+                      <div className="flex items-center justify-between">
+                        <span>{new Date(s.sampledDate).toLocaleDateString()}</span>
+                        <span className="status-tag" style={{ color: STATUS_COLOR[s.reportStatus], background: STATUS_BG[s.reportStatus], fontSize: "0.62rem" }}>{s.reportStatus}</span>
+                      </div>
+                      {keyReadings.length > 0 && (
+                        <div className="text-xs text-[var(--color-ink-muted)] mt-0.5 font-[var(--font-mono)]" style={{ fontFamily: "var(--font-mono)" }}>
+                          {keyReadings.map(([label, v]) => `${label} ${v}`).join(" · ")}
+                        </div>
+                      )}
+                    </button>
+                  );
+                })}
               </div>
             </div>
 
             <div className="bg-white rounded-md border border-[var(--color-line)] p-4">
-              <h2 className="text-sm font-semibold uppercase tracking-wide text-[var(--color-ink-muted)] mb-3">Last 5 Actions</h2>
+              <div className="flex items-center justify-between mb-3">
+                <h2 className="text-sm font-semibold uppercase tracking-wide text-[var(--color-ink-muted)]">Last 5 Actions</h2>
+                <button onClick={() => setShowAddAction(true)} className="text-xs px-2 py-1 rounded text-white" style={{ background: "var(--color-panel)" }}>
+                  Add Action
+                </button>
+              </div>
               <div className="flex flex-col gap-2">
                 {lastActions.map((a) => (
                   <div key={a.id} className="text-sm border-b border-[var(--color-line)] last:border-0 pb-2">
@@ -266,6 +266,18 @@ export function OilSampleCenterPage() {
       )}
       {showUploadModal && (
         <UploadPdfModal onClose={() => setShowUploadModal(false)} onSaved={refreshAfterSave} />
+      )}
+      {showAddAction && detail && selectedLp && (
+        <AddActionModal
+          equipmentId={detail.equipment.id} lpId={selectedLp.id}
+          onClose={() => setShowAddAction(false)}
+          onSaved={() => {
+            setShowAddAction(false);
+            api.get("/action-plans").then((r) => {
+              setLastActions(r.data.actionPlans.filter((a: { equipmentCode: string }) => a.equipmentCode === selectedLp.equipmentIdCode).slice(0, 5));
+            });
+          }}
+        />
       )}
     </div>
   );
@@ -316,6 +328,129 @@ function TrendChart({ group, trend }: { group: string; trend: { sampledDate: str
           ))}
         </LineChart>
       </ResponsiveContainer>
+    </div>
+  );
+}
+
+function ParameterMatrix({
+  samples, trend, selectedSampleId, onSelectSample,
+}: {
+  samples: SampleListItem[];
+  trend: { sampledDate: string; values: { key: string; value: number | null; status: string }[] }[];
+  selectedSampleId: string | null;
+  onSelectSample: (id: string) => void;
+}) {
+  const columns = samples.slice(0, 6).map((s) => {
+    const point = trend.find((t) => t.sampledDate === s.sampledDate);
+    const valueByKey: Record<string, { value: number | null; status: string }> = {};
+    if (point) for (const v of point.values) valueByKey[v.key] = { value: v.value, status: v.status };
+    return { sample: s, valueByKey };
+  });
+
+  if (columns.length === 0) return <p className="text-sm text-[var(--color-ink-muted)]">No samples yet.</p>;
+
+  return (
+    <table className="text-sm border-collapse">
+      <thead>
+        <tr>
+          <th className="text-left py-2 pr-4 sticky left-0 bg-white text-xs uppercase tracking-wide text-[var(--color-ink-muted)] font-medium">Parameter</th>
+          {columns.map((c) => (
+            <th
+              key={c.sample.id} onClick={() => onSelectSample(c.sample.id)}
+              className={`px-3 py-2 text-center cursor-pointer whitespace-nowrap font-[var(--font-mono)] text-xs ${c.sample.id === selectedSampleId ? "bg-[var(--color-canvas)]" : ""}`}
+              style={{ fontFamily: "var(--font-mono)" }}
+            >
+              {new Date(c.sample.sampledDate).toLocaleDateString()}
+            </th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {PARAM_GROUP_ORDER.map((group) => (
+          <Fragment key={group}>
+            <tr>
+              <td colSpan={columns.length + 1} className="pt-3 pb-1 text-xs font-semibold uppercase tracking-wide text-[var(--color-ink-muted)]">
+                {PARAM_GROUP_LABELS[group]}
+              </td>
+            </tr>
+            {OIL_SAMPLE_PARAMETERS.filter((p) => p.group === group).map((p) => (
+              <tr key={p.key} className="border-b border-[var(--color-line)] last:border-0">
+                <td className="py-1.5 pr-4 sticky left-0 bg-white whitespace-nowrap">{p.label}{p.unit ? ` (${p.unit})` : ""}</td>
+                {columns.map((c) => {
+                  const cell = c.valueByKey[p.key];
+                  return (
+                    <td key={c.sample.id} className="px-3 py-1.5 text-center font-[var(--font-mono)]" style={{
+                      fontFamily: "var(--font-mono)",
+                      background: cell ? STATUS_BG[cell.status] : undefined,
+                      color: cell ? STATUS_COLOR[cell.status] : "var(--color-ink-muted)",
+                    }}>
+                      {cell?.value != null ? cell.value : cell ? "—" : ""}
+                    </td>
+                  );
+                })}
+              </tr>
+            ))}
+          </Fragment>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+
+
+const MANUAL_ACTION_TYPES = ["Missed Lubrication", "Incorrect Lubrication", "Excess Oil Consumption", "Oil Shortage Risk"];
+
+function AddActionModal({ equipmentId, lpId, onClose, onSaved }: { equipmentId: string; lpId: string; onClose: () => void; onSaved: () => void }) {
+  const [actionTypeName, setActionTypeName] = useState(MANUAL_ACTION_TYPES[0]);
+  const [description, setDescription] = useState("");
+  const [priority, setPriority] = useState("MEDIUM");
+  const [error, setError] = useState<string | null>(null);
+  const [saving, setSaving] = useState(false);
+
+  async function save() {
+    setError(null);
+    setSaving(true);
+    try {
+      await api.post("/action-plans", { actionTypeName, equipmentId, lpIds: [lpId], description, priority });
+      onSaved();
+    } catch (err) {
+      setError(apiErrorMessage(err));
+    } finally {
+      setSaving(false);
+    }
+  }
+
+  return (
+    <div className="fixed inset-0 bg-black/30 flex items-center justify-center z-50 p-4" onClick={onClose}>
+      <div className="bg-white rounded-md p-6 w-full max-w-md" onClick={(e) => e.stopPropagation()}>
+        <h3 className="font-semibold text-lg mb-4" style={{ fontFamily: "var(--font-display)" }}>Add action</h3>
+        <div className="flex flex-col gap-3">
+          <label className="flex flex-col gap-1 text-sm">
+            Action Type
+            <select value={actionTypeName} onChange={(e) => setActionTypeName(e.target.value)} className="border border-[var(--color-line)] rounded px-3 py-2 text-sm">
+              {MANUAL_ACTION_TYPES.map((t) => <option key={t} value={t}>{t}</option>)}
+            </select>
+          </label>
+          <label className="flex flex-col gap-1 text-sm">
+            Priority
+            <select value={priority} onChange={(e) => setPriority(e.target.value)} className="border border-[var(--color-line)] rounded px-3 py-2 text-sm">
+              {["LOW", "MEDIUM", "HIGH", "CRITICAL"].map((p) => <option key={p} value={p}>{p}</option>)}
+            </select>
+          </label>
+          <label className="flex flex-col gap-1 text-sm">
+            Description
+            <textarea value={description} onChange={(e) => setDescription(e.target.value)} rows={3} className="border border-[var(--color-line)] rounded px-3 py-2 text-sm" />
+          </label>
+          {error && <p className="text-sm" style={{ color: "var(--color-signal-red)" }}>{error}</p>}
+          <div className="flex justify-end gap-2 mt-2">
+            <button onClick={onClose} className="text-sm px-3 py-1.5 rounded border border-[var(--color-line)]">Cancel</button>
+            <button onClick={save} disabled={!description || saving} className="text-sm px-3 py-1.5 rounded text-white disabled:opacity-50" style={{ background: "var(--color-panel)" }}>
+              Create
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

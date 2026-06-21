@@ -67,6 +67,7 @@ router.get("/:id", async (req, res) => {
     uploadedAt: sample.uploadedAt,
     lp: { id: sample.lp.id, lpIdCode: sample.lp.lpIdCode, pointDescription: sample.lp.pointDescription },
     equipment: {
+      id: sample.lp.equipment.id,
       code: sample.lp.equipment.equipmentIdCode,
       name: sample.lp.equipment.assetName,
       area: sample.lp.equipment.area?.name ?? null,
