@@ -1,6 +1,7 @@
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
+import { sheetsCache } from './lib/sheetsCache';
 
 import authRoutes from "./routes/auth";
 import dashboardRoutes from "./routes/dashboard";
