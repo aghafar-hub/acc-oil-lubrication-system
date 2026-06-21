@@ -37,7 +37,9 @@ them later.
   - Dev database: SQLite (zero setup, file-based)
   - Production: swap one line in `prisma/schema.prisma` (`provider = "postgresql"`) and set `DATABASE_URL` — no model changes needed
   - JWT auth, zod validation, bcrypt password hashing
-- **Frontend**: React + Vite + TypeScript + Tailwind (in progress — see Build Status below)
+- **Frontend**: React 19 + Vite + TypeScript + Tailwind CSS v4
+  - react-router-dom for routing, recharts for charts, i18next for EN/AR with full RTL mirroring
+  - "Industrial equipment-tag" design language: steel-blue navigation, warm paper canvas, status badges modeled on physical inspection tags (see `frontend/src/index.css`)
 
 ## Setup
 
@@ -46,13 +48,18 @@ git clone <your-repo-url>
 cd acc-oil-app
 npm install                          # installs both backend + frontend workspaces
 
+# Backend
 cd backend
 cp .env.example .env                 # edit JWT_SECRET before any real deployment
 npx prisma generate
 npx prisma db push                   # creates dev.db and all tables
 npm run db:seed                      # loads the real 902-point dataset + demo users
-
 npm run dev                          # starts the API on http://localhost:4000
+
+# Frontend (in a second terminal)
+cd frontend
+cp .env.example .env                 # points at the API above by default
+npm run dev                          # starts the UI on http://localhost:5173
 ```
 
 Health check: `curl http://localhost:4000/api/health`
@@ -78,7 +85,39 @@ These map to real, separately-editable `PermissionTemplate` rows per
 title — editing RHI Engineer's screen access in Settings never touches
 ASEC Engineer's (Section 4.3 requirement).
 
-## Architecture
+
+## Data quality notes from the source Excel
+
+The import is faithful to the source file, including its imperfections.
+One row (`LP-461.FD090-GWLS`) has the text "Mobil" in the quantity
+column instead of a number — almost certainly a brand name typed into
+the wrong cell. It was imported with a null quantity rather than
+guessed at; worth a quick correction in the master spreadsheet when
+convenient.
+
+## Build status
+
+✅ Backend: data model, full historical seed data, due-date/compliance
+engine (tested), auth + permission engine, and the **complete REST API**
+covering every Section 12/13 screen.
+
+✅ Frontend (verified — actually builds and runs in this environment,
+unlike the Prisma-blocked backend): design system, auth + forced
+first-login password change, app shell with permission-gated
+navigation and live counters, Executive Dashboard with charts, the
+Lubrication Explorer with filters/search/CSV export, LP Details with
+ACC correction, Pending Approvals (approve/reject), Action Plan
+Center (close with mandatory comments), Notification Center, EN/AR
+i18n with RTL wired through the shell.
+
+🚧 Frontend screens still to build: Route Center + mobile execution,
+Oil Sample Center (must match the reference screenshot), Oil
+Management Center, Reports Center, Settings (incl. the permission
+template editor), the 10 client-pending UI themes. These show a
+"coming soon" placeholder for now — their backend APIs are already
+complete and live.
+
+### Architecture
 
 ```
 backend/
@@ -90,6 +129,7 @@ backend/
     lib/
       dueDate.ts          due-date/compliance logic (Section 6) — framework-free, unit-tested
       notify.ts           resolves notification routing tokens to recipients (Section 8)
+      oilSampleParams.ts   canonical 25-parameter dictionary for manual entry + PDF matching
       prisma.ts           Prisma client singleton
     middleware/
       auth.ts             JWT verification, re-fetches permissions fresh on every request
@@ -109,41 +149,26 @@ backend/
       auditLog.ts             Audit Log (Section 9)
       settings.ts              general settings + permission template editor + notification routing editor
       lookups.ts                filter dropdown data
+
+frontend/
+  src/
+    index.css             design tokens — steel/canvas palette, Archivo/Inter/IBM Plex Mono, .status-tag
+    lib/api.ts             axios client, JWT attach, 401 handling
+    context/AuthContext.tsx
+    i18n/                   i18next config + en.json/ar.json resources
+    components/             AppShell (sidebar+nav), KpiCard, StatusTag/PriorityTag
+    pages/                   LoginPage, DashboardPage, ExplorerPage, LpDetailsPage,
+                             PendingApprovalsPage, ActionPlansPage, NotificationsPage, ComingSoonPage
 ```
 
-## Data quality notes from the source Excel
-
-The import is faithful to the source file, including its imperfections.
-One row (`LP-461.FD090-GWLS`) has the text "Mobil" in the quantity
-column instead of a number — almost certainly a brand name typed into
-the wrong cell. It was imported with a null quantity rather than
-guessed at; worth a quick correction in the master spreadsheet when
-convenient.
-
-## Build status
-
-✅ Done: data model, full historical seed data, due-date/compliance
-engine (tested), auth + permission engine, and the **complete REST API**
-covering every Section 12/13 screen: dashboard + contractor comparison,
-lubrication explorer/details + ACC corrections, the full submit→approve/
-reject workflow, action plans, the Oil Sample Center (manual entry +
-batch PDF extraction with mandatory human review), the Route Center +
-offline-friendly mobile route execution, the Oil Management Center
-(consumption, 30-day forecast, purchase log), the Reports Center (CSV
-export), notifications, users/titles, audit log, and settings
-(including the permission-template and notification-routing editors).
-
-🚧 Not yet built: the entire frontend (Section 12/13 screens, i18n
-EN/AR RTL, the 10 UI themes pending from the client).
-
-### A note on `npx tsc --noEmit`
+### A note on `npx tsc --noEmit` (backend only)
 
 Until you've run `npx prisma generate` for real, type-checking the
 backend will show ~40 `TS7006: implicitly has an 'any' type` errors.
 These are expected and not bugs — they come from Prisma Client's types
 not existing yet (this sandbox couldn't generate them; see the warning
-above). They resolve automatically once `prisma generate` succeeds,
-because every `.findMany()` etc. call becomes strongly typed and the
-callback parameters infer correctly. Everything else in the codebase
-type-checks cleanly already — verified by filtering those errors out
-and confirming zero remain.
+above). They resolve automatically once `prisma generate` succeeds.
+Everything else in the codebase type-checks cleanly — verified by
+filtering those errors out and confirming zero remain. The **frontend**
+has no such caveat: `npx tsc -b` and `npm run build` were both run
+successfully in this environment and produce a clean production build.

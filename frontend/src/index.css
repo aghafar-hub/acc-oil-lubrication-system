@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Kufi+Arabic:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+/*
+  ACC Oil Lubrication Management System — design tokens.
+
+  Direction: industrial equipment-tag aesthetic, not generic SaaS.
+  Steel-panel navigation, warm technical-paper canvas, and status
+  "tags" modeled on the physical inspection tags used on real plant
+  equipment — a bold colored edge + monospace label, reused everywhere
+  a status appears (lubrication status, action priority, notification
+  priority). That repetition is the signature element.
+*/
+@theme {
+  --color-panel: #1c2b3a;       /* steel-blue sidebar/header panels */
+  --color-panel-light: #2a3f52;
+  --color-canvas: #f4f1ea;      /* warm technical-paper background */
+  --color-surface: #ffffff;
+  --color-ink: #1a1a18;
+  --color-ink-muted: #5c5850;
+  --color-line: #ddd7c8;
+
+  --color-signal-red: #c8442c;     /* overdue / alert */
+  --color-signal-red-bg: #fbe9e5;
+  --color-signal-amber: #d68f1f;   /* due soon / caution */
+  --color-signal-amber-bg: #faf0dc;
+  --color-signal-green: #3e7c59;   /* compliant / ok */
+  --color-signal-green-bg: #e7f1ec;
+  --color-signal-blue: #2d6ca8;    /* informational */
+  --color-signal-blue-bg: #e6eef6;
+  --color-signal-gray: #6b6760;    /* condition monitoring / not tracked */
+  --color-signal-gray-bg: #ececE6;
+
+  --font-display: 'Archivo', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --font-arabic: 'Noto Kufi Arabic', system-ui, sans-serif;
+}
+
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+[dir="rtl"] body { font-family: var(--font-arabic); }
+
+::selection { background: var(--color-signal-amber); color: white; }
+
+/* Equipment-tag status badge — the recurring signature element */
+.status-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  padding: 0.22rem 0.6rem 0.22rem 0.5rem;
+  border-radius: 0.25rem;
+  border-left: 3px solid currentColor;
+}
+[dir="rtl"] .status-tag { border-left: none; border-right: 3px solid currentColor; }
+
+.scrollbar-thin::-webkit-scrollbar { height: 8px; width: 8px; }
+.scrollbar-thin::-webkit-scrollbar-thumb { background: var(--color-line); border-radius: 4px; }
