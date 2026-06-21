@@ -50,9 +50,14 @@ app.use((err: any, req: express.Request, res: express.Response, next: express.Ne
 });
 
 const port = process.env.PORT || 4000;
-app.listen(port, () => {
-  console.log(`ACC Oil Lubrication API listening on http://localhost:${port}`);
-});
+async function start() {
+  await sheetsCache.loadAll();
+  sheetsCache.startBackgroundRefresh();
+  app.listen(port, () => {
+    console.log(`ACC Oil Lubrication API listening on http://localhost:${port}`);
+  });
+}
+start();
 
 // Auto-creates the "auto" Action Plans (Overdue Lubrication / Oil Sample Overdue) the
 // moment a point crosses into OVERDUE — see jobs/checkOverdue.ts. Runs shortly after
