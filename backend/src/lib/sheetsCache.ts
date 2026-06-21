@@ -4,7 +4,7 @@
 // Sheets in the background. A periodic refresh reconciles against manual
 // edits made directly in the Sheet.
 
-import fetch from 'node-fetch';
+import https from 'https';
 
 const SHEETS_API_BASE = process.env.SHEETS_API_BASE!; // the .../exec URL
 const SHEETS_API_KEY = process.env.SHEETS_API_KEY!;
@@ -37,6 +37,32 @@ const TABLES: { name: string; book: Book; cacheKey: string }[] = [
   { name: 'General Settings',             book: 'config', cacheKey: 'generalSettings' },
 ];
 
+// Apps Script's /exec URLs often respond with a redirect to a
+// script.googleusercontent.com URL for the actual content — this follows
+// that automatically.
+function httpRequest(url: string, options: https.RequestOptions, body?: string): Promise<any> {
+  return new Promise((resolve, reject) => {
+    const req = https.request(url, options, (res) => {
+      if (res.statusCode && [301, 302, 303].includes(res.statusCode) && res.headers.location) {
+        res.resume();
+        return resolve(httpRequest(res.headers.location, { method: 'GET' }));
+      }
+      let data = '';
+      res.on('data', (chunk) => { data += chunk; });
+      res.on('end', () => {
+        try {
+          resolve(JSON.parse(data));
+        } catch {
+          reject(new Error(`Failed to parse Sheets API response: ${data.slice(0, 300)}`));
+        }
+      });
+    });
+    req.on('error', reject);
+    if (body) req.write(body);
+    req.end();
+  });
+}
+
 class SheetsCache {
   private store: Record<string, Row[]> = {};
   private loaded = false;
@@ -44,19 +70,17 @@ class SheetsCache {
 
   private async apiGet(book: Book, sheet: string, action: string, extra: Record<string, string> = {}) {
     const params = new URLSearchParams({ apiKey: SHEETS_API_KEY, book, sheet, action, ...extra });
-    const res = await fetch(`${SHEETS_API_BASE}?${params.toString()}`);
-    const json: any = await res.json();
+    const json = await httpRequest(`${SHEETS_API_BASE}?${params.toString()}`, { method: 'GET' });
     if (!json.ok) throw new Error(`Sheets API error (${book}/${sheet}/${action}): ${json.error}`);
     return json;
   }
 
   private async apiPost(book: Book, sheet: string, action: string, body: Record<string, any>) {
-    const res = await fetch(SHEETS_API_BASE, {
+    const payload = JSON.stringify({ apiKey: SHEETS_API_KEY, book, sheet, action, ...body });
+    const json = await httpRequest(SHEETS_API_BASE, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ apiKey: SHEETS_API_KEY, book, sheet, action, ...body }),
-    });
-    const json: any = await res.json();
+      headers: { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(payload) },
+    }, payload);
     if (!json.ok) throw new Error(`Sheets API error (${book}/${sheet}/${action}): ${json.error}`);
     return json;
   }
@@ -95,7 +119,7 @@ class SheetsCache {
   async append(cacheKey: string, row: Row): Promise<void> {
     const table = TABLES.find(t => t.cacheKey === cacheKey);
     if (!table) throw new Error(`Unknown cache key: ${cacheKey}`);
-    this.store[cacheKey] = [...(this.store[cacheKey] || []), row]; // instant
+    this.store[cacheKey] = [...(this.store[cacheKey] || []), row];
     this.apiPost(table.book, table.name, 'append', { row }).catch(err =>
       console.error(`[sheetsCache] background append to ${table.name} failed (will reconcile on next refresh):`, err)
     );
@@ -107,7 +131,7 @@ class SheetsCache {
     const rows = this.store[cacheKey] || [];
     const idx = rows.findIndex(r => String(r[keyColumn]) === String(keyValue));
     if (idx === -1) throw new Error(`No row found in ${cacheKey} where ${keyColumn} = ${keyValue}`);
-    rows[idx] = { ...rows[idx], ...updates }; // instant
+    rows[idx] = { ...rows[idx], ...updates };
     this.apiPost(table.book, table.name, 'update', { keyColumn, keyValue, updates }).catch(err =>
       console.error(`[sheetsCache] background update to ${table.name} failed (will reconcile on next refresh):`, err)
     );
@@ -116,7 +140,7 @@ class SheetsCache {
   async remove(cacheKey: string, keyColumn: string, keyValue: any): Promise<void> {
     const table = TABLES.find(t => t.cacheKey === cacheKey);
     if (!table) throw new Error(`Unknown cache key: ${cacheKey}`);
-    this.store[cacheKey] = (this.store[cacheKey] || []).filter(r => String(r[keyColumn]) !== String(keyValue)); // instant
+    this.store[cacheKey] = (this.store[cacheKey] || []).filter(r => String(r[keyColumn]) !== String(keyValue));
     this.apiPost(table.book, table.name, 'delete', { keyColumn, keyValue }).catch(err =>
       console.error(`[sheetsCache] background delete from ${table.name} failed (will reconcile on next refresh):`, err)
     );
