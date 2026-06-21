@@ -12,6 +12,10 @@ import actionPlansRoutes from "./routes/actionPlans";
 import usersRoutes from "./routes/users";
 import auditLogRoutes from "./routes/auditLog";
 import settingsRoutes from "./routes/settings";
+import oilSamplesRoutes from "./routes/oilSamples";
+import routeCenterRoutes from "./routes/routeCenter";
+import oilManagementRoutes from "./routes/oilManagement";
+import reportsRoutes from "./routes/reports";
 
 const app = express();
 
@@ -30,6 +34,10 @@ app.use("/api/action-plans", actionPlansRoutes);
 app.use("/api/users", usersRoutes);
 app.use("/api/audit-log", auditLogRoutes);
 app.use("/api/settings", settingsRoutes);
+app.use("/api/oil-samples", oilSamplesRoutes);
+app.use("/api/routes", routeCenterRoutes);
+app.use("/api/oil-management", oilManagementRoutes);
+app.use("/api/reports", reportsRoutes);
 
 // Centralized error handler — keeps unhandled exceptions from leaking stack traces to clients
 app.use((err: any, req: express.Request, res: express.Response, next: express.NextFunction) => {

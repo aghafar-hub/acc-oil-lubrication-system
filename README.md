@@ -100,6 +100,10 @@ backend/
       lubricationPoints.ts  Explorer + LP Details + ACC correction (Section 12.2/12.3)
       lubricationRecords.ts submission + approval workflow (Section 5, 13)
       actionPlans.ts        Action Plan Center (Section 10)
+      oilSamples.ts          Oil Sample Center + batch PDF extraction (Section 12.7)
+      routeCenter.ts          Route Center + mobile route execution (Section 12.4, 13)
+      oilManagement.ts         Oil Management Center (Section 11)
+      reports.ts                Reports Center + CSV export (Section 12.11)
       notifications.ts      Notification Center (Section 12.10)
       users.ts               Users & Roles (Section 4)
       auditLog.ts             Audit Log (Section 9)
@@ -119,11 +123,27 @@ convenient.
 ## Build status
 
 ✅ Done: data model, full historical seed data, due-date/compliance
-engine (tested), auth + permission engine, core REST API (dashboard,
-explorer, LP details, approval workflow, action plans, notifications,
-users, audit log, settings).
+engine (tested), auth + permission engine, and the **complete REST API**
+covering every Section 12/13 screen: dashboard + contractor comparison,
+lubrication explorer/details + ACC corrections, the full submit→approve/
+reject workflow, action plans, the Oil Sample Center (manual entry +
+batch PDF extraction with mandatory human review), the Route Center +
+offline-friendly mobile route execution, the Oil Management Center
+(consumption, 30-day forecast, purchase log), the Reports Center (CSV
+export), notifications, users/titles, audit log, and settings
+(including the permission-template and notification-routing editors).
 
-🚧 Not yet built: Oil Sample Center + PDF/OCR import (Section 12.7),
-Route Center + mobile route execution (Section 12.4/13), Oil
-Management Center forecast/purchase log (Section 11), Reports Center
-(Section 12.11), and the entire frontend (Section 12/13 screens).
+🚧 Not yet built: the entire frontend (Section 12/13 screens, i18n
+EN/AR RTL, the 10 UI themes pending from the client).
+
+### A note on `npx tsc --noEmit`
+
+Until you've run `npx prisma generate` for real, type-checking the
+backend will show ~40 `TS7006: implicitly has an 'any' type` errors.
+These are expected and not bugs — they come from Prisma Client's types
+not existing yet (this sandbox couldn't generate them; see the warning
+above). They resolve automatically once `prisma generate` succeeds,
+because every `.findMany()` etc. call becomes strongly typed and the
+callback parameters infer correctly. Everything else in the codebase
+type-checks cleanly already — verified by filtering those errors out
+and confirming zero remain.
