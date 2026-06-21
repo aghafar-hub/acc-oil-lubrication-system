@@ -16,6 +16,8 @@ import oilSamplesRoutes from "./routes/oilSamples";
 import routeCenterRoutes from "./routes/routeCenter";
 import oilManagementRoutes from "./routes/oilManagement";
 import reportsRoutes from "./routes/reports";
+import timelineRoutes from "./routes/timeline";
+import { checkOverdueAndCreateActions } from "./jobs/checkOverdue";
 
 const app = express();
 
@@ -38,6 +40,7 @@ app.use("/api/oil-samples", oilSamplesRoutes);
 app.use("/api/routes", routeCenterRoutes);
 app.use("/api/oil-management", oilManagementRoutes);
 app.use("/api/reports", reportsRoutes);
+app.use("/api/timeline", timelineRoutes);
 
 // Centralized error handler — keeps unhandled exceptions from leaking stack traces to clients
 app.use((err: any, req: express.Request, res: express.Response, next: express.NextFunction) => {
@@ -49,3 +52,17 @@ const port = process.env.PORT || 4000;
 app.listen(port, () => {
   console.log(`ACC Oil Lubrication API listening on http://localhost:${port}`);
 });
+
+// Auto-creates the "auto" Action Plans (Overdue Lubrication / Oil Sample Overdue) the
+// moment a point crosses into OVERDUE — see jobs/checkOverdue.ts. Runs shortly after
+// boot (gives Prisma a moment to connect) and then hourly. For production, an external
+// cron calling `npm run check-overdue` works just as well and survives restarts better
+// than this in-process interval; both call the same idempotent function.
+setTimeout(() => {
+  checkOverdueAndCreateActions()
+    .then((r) => console.log(`Overdue check: scanned ${r.pointsScanned}, created ${r.actionsCreated}`))
+    .catch((err) => console.error("Overdue check failed:", err));
+}, 5_000);
+setInterval(() => {
+  checkOverdueAndCreateActions().catch((err) => console.error("Overdue check failed:", err));
+}, 60 * 60 * 1000);

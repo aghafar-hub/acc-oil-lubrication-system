@@ -54,7 +54,8 @@ cp .env.example .env                 # edit JWT_SECRET before any real deploymen
 npx prisma generate
 npx prisma db push                   # creates dev.db and all tables
 npm run db:seed                      # loads the real 902-point dataset + demo users
-npm run dev                          # starts the API on http://localhost:4000
+npm run dev                          # starts the API on http://localhost:4000 (also runs the
+                                      # overdue-check job once at boot, then hourly — see below)
 
 # Frontend (in a second terminal)
 cd frontend
@@ -126,10 +127,30 @@ table. The Sample Timeline list shows key readings (Visc/Fe/Si/Water)
 inline per spec, and an Add Action button creates a manual Action Plan
 Center entry scoped to the equipment, also per spec.
 
-🚧 Still to build: the Lubrication Timeline (Section 12.6) — the one
-remaining desktop screen — and the dedicated mobile (M01-M06) layouts;
-the 10 client-pending UI themes. The "coming soon" placeholder
-component remains in place for the Timeline route.
+The Lubrication Timeline (Section 12.6) is also now built: a unified,
+filterable plant-wide activity feed (area/equipment/event type/date
+range/technician/contractor) aggregated from lubrication records, oil
+samples, action plans, and ACC data edits across nine event types.
+
+🚧 Still to build: the dedicated mobile (M01-M06) layouts (the desktop
+build is responsive but isn't the purpose-built mobile flow the spec
+describes) and the 10 client-pending UI themes.
+
+### The overdue-detection job (Section 10's "auto" half)
+
+Building the Timeline surfaced a real gap: due-date status is always
+computed live (by design — see `dueDate.ts`), so nothing ever actually
+*created* the "auto" Action Plans (Overdue Lubrication, Oil Sample
+Overdue) or their notifications when a point crossed into overdue.
+`backend/src/jobs/checkOverdue.ts` fixes this: it scans every point,
+and the moment one transitions to OVERDUE, creates the corresponding
+auto Action Plan + notification exactly once (skipped on every
+subsequent run while that Action Plan stays open). The running server
+calls it once ~5s after boot and then hourly; `npm run check-overdue`
+runs it standalone for an external cron, which is the more
+restart-safe option in production. Its ActionPlan.createdAt timestamps
+are also the literal source of the Lubrication Timeline's "Overdue
+flagged" / "Oil sample overdue flagged" events.
 
 ### A note on `npx eslint`
 
@@ -138,9 +159,11 @@ The scaffolded ESLint config ships `eslint-plugin-react-hooks`'s new
 fetch, setState in `.then()`" pattern used throughout this app (there's
 no React Query/SWR layer — just plain `useEffect` + axios). That's
 idiomatic data-fetching, not a bug, so the rule is turned off in
-`eslint.config.js` with a comment explaining why. Everything else
-lints clean except two harmless `exhaustive-deps` warnings on stable
-`load()` functions.
+`eslint.config.js` with a comment explaining why. The same plugin's
+newer `purity` rule (no impure calls like `Date.now()` directly in a
+`useState` initializer) caught a few real instances, fixed with the
+lazy-initializer form. Everything else lints clean except two
+harmless `exhaustive-deps` warnings on stable `load()` functions.
 
 ### Architecture
 
@@ -169,11 +192,15 @@ backend/
       routeCenter.ts          Route Center + mobile route execution (Section 12.4, 13)
       oilManagement.ts         Oil Management Center (Section 11)
       reports.ts                Reports Center + CSV export (Section 12.11)
+      timeline.ts                Lubrication Timeline (Section 12.6)
       notifications.ts      Notification Center (Section 12.10)
       users.ts               Users & Roles (Section 4)
       auditLog.ts             Audit Log (Section 9)
       settings.ts              general settings + permission template editor + notification routing editor
       lookups.ts                filter dropdown data
+    jobs/
+      checkOverdue.ts      auto-creates "auto" Action Plans the moment a point goes overdue (Section 10)
+      runOnce.ts            standalone entry point — `npm run check-overdue`
 
 frontend/
   src/
@@ -184,8 +211,8 @@ frontend/
     components/             AppShell (sidebar+nav), KpiCard, StatusTag/PriorityTag
     pages/                   LoginPage, DashboardPage, ExplorerPage, LpDetailsPage,
                              PendingApprovalsPage, ActionPlansPage, NotificationsPage,
-                             OilSampleCenterPage, RouteCenterPage, OilManagementPage,
-                             ReportsPage, SettingsPage, ComingSoonPage (Timeline only)
+                             TimelinePage, OilSampleCenterPage, RouteCenterPage,
+                             OilManagementPage, ReportsPage, SettingsPage
 ```
 
 ### A note on `npx tsc --noEmit` (backend only)

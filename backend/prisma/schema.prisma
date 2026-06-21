@@ -164,6 +164,7 @@ model LubricationRecord {
   approvedBy   User?     @relation("RecordsApproved", fields: [approvedById], references: [id])
   approvedAt   DateTime?
   rejectedReason String?
+  rejectedAt     DateTime?
 
   // True for the 1,102 historical entries reconstructed from the legacy
   // Excel's LP_Change LOG at import time (Section 14 seed requirement).

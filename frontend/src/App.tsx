@@ -8,12 +8,12 @@ import { LpDetailsPage } from "./pages/LpDetailsPage";
 import { PendingApprovalsPage } from "./pages/PendingApprovalsPage";
 import { ActionPlansPage } from "./pages/ActionPlansPage";
 import { NotificationsPage } from "./pages/NotificationsPage";
+import { TimelinePage } from "./pages/TimelinePage";
 import { OilSampleCenterPage } from "./pages/OilSampleCenterPage";
 import { RouteCenterPage } from "./pages/RouteCenterPage";
 import { OilManagementPage } from "./pages/OilManagementPage";
 import { ReportsPage } from "./pages/ReportsPage";
 import { SettingsPage } from "./pages/SettingsPage";
-import { ComingSoonPage } from "./pages/ComingSoonPage";
 
 function ProtectedRoutes() {
   const { user, loading, mustChangePassword } = useAuth();
@@ -34,7 +34,7 @@ function ProtectedRoutes() {
         <Route path="/action-plans" element={<ActionPlansPage />} />
         <Route path="/notifications" element={<NotificationsPage />} />
         <Route path="/routes" element={<RouteCenterPage />} />
-        <Route path="/timeline" element={<ComingSoonPage titleKey="nav.timeline" />} />
+        <Route path="/timeline" element={<TimelinePage />} />
         <Route path="/oil-samples" element={<OilSampleCenterPage />} />
         <Route path="/oil-management" element={<OilManagementPage />} />
         <Route path="/reports" element={<ReportsPage />} />

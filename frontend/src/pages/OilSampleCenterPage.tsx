@@ -459,7 +459,7 @@ function AddActionModal({ equipmentId, lpId, onClose, onSaved }: { equipmentId: 
 
 function AddSampleModal({ lpId, onClose, onSaved }: { lpId: string; onClose: () => void; onSaved: () => void }) {
   const [sampleIdLab, setSampleIdLab] = useState("");
-  const [sampledDate, setSampledDate] = useState(new Date().toISOString().slice(0, 10));
+  const [sampledDate, setSampledDate] = useState(() => new Date().toISOString().slice(0, 10));
   const [recommendationsText, setRecommendationsText] = useState("");
   const [values, setValues] = useState<Record<string, string>>({});
   const [error, setError] = useState<string | null>(null);

@@ -177,7 +177,7 @@ router.patch("/:id/reject", requireCapability("reject"), async (req, res) => {
 
   await prisma.lubricationRecord.update({
     where: { id: record.id },
-    data: { status: "REJECTED", rejectedReason: parsed.data.reason },
+    data: { status: "REJECTED", rejectedReason: parsed.data.reason, rejectedAt: new Date(), approvedById: req.user!.id },
   });
 
   if (record.technicianId) {

@@ -172,7 +172,7 @@ export function OilManagementPage() {
 function AddPurchaseModal({ lubricantTypes, onClose, onSaved }: { lubricantTypes: LubricantType[]; onClose: () => void; onSaved: () => void }) {
   const [lubricantTypeId, setLubricantTypeId] = useState("");
   const [quantityL, setQuantityL] = useState("");
-  const [purchaseDate, setPurchaseDate] = useState(new Date().toISOString().slice(0, 10));
+  const [purchaseDate, setPurchaseDate] = useState(() => new Date().toISOString().slice(0, 10));
   const [error, setError] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
 
