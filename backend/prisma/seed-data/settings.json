@@ -1,0 +1,10 @@
+[
+  {"key": "approval.sla_days", "value": "3", "editableByTitle": null},
+  {"key": "deviation.quantity_threshold_pct", "value": "20", "editableByTitle": null},
+  {"key": "repeated_rejection.threshold", "value": "3", "editableByTitle": null},
+  {"key": "notifications.sender_email", "value": "", "editableByTitle": null},
+  {"key": "notifications.batch_overdue_daily", "value": "true", "editableByTitle": null},
+  {"key": "app.languages", "value": "en,ar", "editableByTitle": null},
+  {"key": "app.default_theme", "value": "industrial-blue", "editableByTitle": null},
+  {"key": "app.company_name", "value": "Arabian Cement Company", "editableByTitle": null}
+]

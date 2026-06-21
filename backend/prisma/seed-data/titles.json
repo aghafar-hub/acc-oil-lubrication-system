@@ -1,0 +1,11 @@
+[
+  {"id": "title-super-admin", "name": "Super Admin", "organizationId": null, "permissionTemplateName": "Super Admin"},
+  {"id": "title-acc-manager", "name": "ACC Manager", "organizationId": "org-acc", "permissionTemplateName": "ACC Manager"},
+  {"id": "title-acc-engineer", "name": "ACC Engineer", "organizationId": "org-acc", "permissionTemplateName": "ACC Engineer"},
+  {"id": "title-rhi-manager", "name": "RHI Manager", "organizationId": "org-rhi", "permissionTemplateName": "RHI Manager"},
+  {"id": "title-rhi-engineer", "name": "RHI Engineer", "organizationId": "org-rhi", "permissionTemplateName": "RHI Engineer"},
+  {"id": "title-rhi-technician", "name": "RHI Technician", "organizationId": "org-rhi", "permissionTemplateName": "RHI Technician"},
+  {"id": "title-asec-manager", "name": "ASEC Manager", "organizationId": "org-asec", "permissionTemplateName": "ASEC Manager"},
+  {"id": "title-asec-engineer", "name": "ASEC Engineer", "organizationId": "org-asec", "permissionTemplateName": "ASEC Engineer"},
+  {"id": "title-asec-technician", "name": "ASEC Technician", "organizationId": "org-asec", "permissionTemplateName": "ASEC Technician"}
+]

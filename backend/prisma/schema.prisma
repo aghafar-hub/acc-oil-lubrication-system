@@ -1,0 +1,541 @@
+// ACC Oil Lubrication Management System — Database Schema
+// Implements Handover Section 14. Field/table names are deliberately
+// descriptive and readable by plant engineers, not opaque codes.
+//
+// Dev datasource is SQLite (zero-setup, file-based). To run against
+// PostgreSQL in production, change `provider` below to "postgresql"
+// and set DATABASE_URL to a Postgres connection string — no model
+// changes are required, this schema is written to be portable.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// ORGANIZATIONS & AREAS
+// ─────────────────────────────────────────────────────────────────────────
+
+enum OrganizationType {
+  OWNER
+  CONTRACTOR
+}
+
+model Organization {
+  id        String           @id @default(cuid())
+  name      String           @unique // the ONLY field ever edited for an existing org
+  type      OrganizationType
+  createdAt DateTime         @default(now())
+
+  areas              Area[]
+  users              User[]
+  titles             Title[]
+  routes             Route[]
+  oilPurchaseLogs    OilPurchaseLog[]
+  auditLogsVisible   AuditLog[]       @relation("AuditVisibleToOrg")
+
+  @@map("organizations")
+}
+
+model Area {
+  id             String   @id @default(cuid())
+  locnCode       String   @unique // e.g. "111", "421" — from master Excel "Locn."
+  name           String   // editable by Super Admin, e.g. "Crusher Area"
+  organizationId String   // reassignable independently of org name (Section 4.1)
+  organization   Organization @relation(fields: [organizationId], references: [id])
+
+  equipment Equipment[]
+
+  @@map("areas")
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// EQUIPMENT & LUBRICATION POINTS
+// ─────────────────────────────────────────────────────────────────────────
+
+model Equipment {
+  id               String  @id @default(cuid())
+  equipmentIdCode  String  @unique // e.g. "111.AF040" — client's existing asset code
+  assetName        String  // e.g. "Apron Feeder"
+  areaId           String?
+  area             Area?   @relation(fields: [areaId], references: [id])
+  gearboxBrand     String?
+  opTempC          Float?
+  annualRhActual   Float?  // informational only per Section 6.1, not used for scheduling
+
+  lubricationPoints LubricationPoint[]
+  actionPlans       ActionPlan[]
+
+  @@map("equipment")
+}
+
+model LubricantType {
+  id    String  @id @default(cuid())
+  name  String  // e.g. "Mobil SHC 630"
+  brand String?
+
+  lubricationPoints      LubricationPoint[]
+  recordsAsOilUsed       LubricationRecord[]
+  oilPurchaseLogs        OilPurchaseLog[]
+
+  @@unique([name, brand])
+  @@map("lubricant_types")
+}
+
+enum FrequencyType {
+  CALENDAR
+  OIL_ANALYSIS
+  AS_NEEDED
+}
+
+model LubricationPoint {
+  id          String  @id @default(cuid())
+  lpIdCode    String  @unique // e.g. "LP-111.AF040-GB-R" — client's existing convention
+  equipmentId String
+  equipment   Equipment @relation(fields: [equipmentId], references: [id])
+
+  pointDescription String  // e.g. "Gear box - R"
+  pointCode        String? // e.g. "GB"
+  position         String? // e.g. "R", "L", "1", "A"
+
+  standardQuantityL Float?
+  lubricantTypeId   String?
+  lubricantType     LubricantType? @relation(fields: [lubricantTypeId], references: [id])
+
+  frequencyType         FrequencyType
+  frequencyLabel        String?  // raw label from source, e.g. "2 Y", "Oil Analysis", "As needed"
+  frequencyIntervalDays Int?     // null for OIL_ANALYSIS / AS_NEEDED
+
+  ohHoursReference Float? // reference-only, Section 6.1
+
+  oaRequired        Boolean  @default(false)
+  oaIntervalDays    Int?
+  oaIntervalLabel   String?
+  oaLastSampleDate  DateTime? // cached; authoritative source is latest OilSample.sampledDate
+
+  // Cached for query performance. Authoritative source is the latest
+  // APPROVED LubricationRecord.lubricationDate (Section 5 / Section 14 note).
+  lastChangeDateCache DateTime?
+
+  remarks String?
+
+  lubricationRecords LubricationRecord[]
+  oilSamples         OilSample[]
+  routeExecutionLogs RouteExecutionLog[]
+
+  @@map("lubrication_points")
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// LUBRICATION RECORDS (the work log / approval workflow)
+// ─────────────────────────────────────────────────────────────────────────
+
+enum RecordStatus {
+  DRAFT
+  PENDING_APPROVAL
+  APPROVED
+  REJECTED
+}
+
+model LubricationRecord {
+  id          String @id @default(cuid())
+  lpId        String
+  lp          LubricationPoint @relation(fields: [lpId], references: [id])
+
+  technicianId String?
+  technician   User?   @relation("RecordsSubmitted", fields: [technicianId], references: [id])
+
+  lubricationDate DateTime
+  quantityUsedL   Float?
+  oilTypeUsedId   String?
+  oilTypeUsed     LubricantType? @relation(fields: [oilTypeUsedId], references: [id])
+  runningHours    Float?
+  photoUrls       Json     @default("[]")
+  remarks         String?
+
+  status RecordStatus @default(DRAFT)
+
+  submittedAt DateTime?
+  approvedById String?
+  approvedBy   User?     @relation("RecordsApproved", fields: [approvedById], references: [id])
+  approvedAt   DateTime?
+  rejectedReason String?
+
+  // True for the 1,102 historical entries reconstructed from the legacy
+  // Excel's LP_Change LOG at import time (Section 14 seed requirement).
+  isLegacyImport Boolean @default(false)
+
+  createdAt DateTime @default(now())
+
+  @@map("lubrication_records")
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// USERS, TITLES, PERMISSIONS  (Section 4)
+// ─────────────────────────────────────────────────────────────────────────
+
+model Title {
+  id   String  @id @default(cuid())
+  name String  // e.g. "RHI Technician" — editable, not a fixed enum (Section 4.2)
+
+  // null = a global title (Super Admin); set = scoped to one org's hierarchy
+  organizationId String?
+  organization   Organization? @relation(fields: [organizationId], references: [id])
+
+  permissionTemplateId String?
+  permissionTemplate   PermissionTemplate? @relation(fields: [permissionTemplateId], references: [id])
+
+  users User[]
+
+  @@map("titles")
+}
+
+enum DataScope {
+  OWN_ORG
+  ALL_ORGS
+}
+
+model PermissionTemplate {
+  id    String @id @default(cuid())
+  name  String @unique // e.g. "RHI Engineer" — mirrors the title it's seeded for, editable after
+
+  // Screen visibility flags, keyed by screen id, e.g. { "dashboard": true, "settings": false, ... }
+  screenAccess Json @default("{}")
+
+  dataScope DataScope @default(OWN_ORG)
+
+  // Capability list, e.g. { "submit": true, "approve": false, "editData": false, "manageUsers": false, ... }
+  capabilities Json @default("{}")
+
+  titles Title[]
+
+  @@map("permission_templates")
+}
+
+model User {
+  id           String  @id @default(cuid())
+  name         String
+  email        String  @unique
+  passwordHash String
+
+  titleId        String?
+  title          Title?  @relation(fields: [titleId], references: [id])
+  organizationId String?
+  organization   Organization? @relation(fields: [organizationId], references: [id])
+
+  languagePref String  @default("en") // "en" | "ar"
+  themePref    String  @default("default")
+  mustChangePassword Boolean @default(false)
+  active       Boolean @default(true)
+  createdAt    DateTime @default(now())
+
+  recordsSubmitted LubricationRecord[] @relation("RecordsSubmitted")
+  recordsApproved  LubricationRecord[] @relation("RecordsApproved")
+  notifications    Notification[]
+  routeAssignments RouteAssignment[]
+  actionPlansOwned ActionPlan[]        @relation("ActionOwner")
+  actionPlansCreated ActionPlan[]      @relation("ActionCreatedBy")
+  oilSamplesUploaded OilSample[]
+  oilPurchaseLogsLogged OilPurchaseLog[]
+  auditLogActions  AuditLog[]
+
+  @@map("users")
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// NOTIFICATIONS  (Section 8)
+// ─────────────────────────────────────────────────────────────────────────
+
+enum NotificationPriority {
+  INFO
+  WARNING
+  CRITICAL
+}
+
+enum NotificationStatus {
+  UNREAD
+  READ
+  ARCHIVED
+}
+
+model NotificationType {
+  id              String @id @default(cuid())
+  name            String @unique // e.g. "Pending Approval", "Route Point Skipped"
+  defaultPriority NotificationPriority @default(INFO)
+
+  routingRules  NotificationRoutingRule[]
+  notifications Notification[]
+
+  @@map("notification_types")
+}
+
+model NotificationRoutingRule {
+  id                 String @id @default(cuid())
+  notificationTypeId String
+  notificationType   NotificationType @relation(fields: [notificationTypeId], references: [id])
+
+  recipientTitleNames Json // array of Title.name strings this routes to
+  channels            Json // e.g. ["in_app", "email"]
+
+  @@map("notification_routing_rules")
+}
+
+model Notification {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  typeId  String
+  type    NotificationType @relation(fields: [typeId], references: [id])
+  message String
+
+  relatedEntityType String?
+  relatedEntityId   String?
+
+  priority NotificationPriority @default(INFO)
+  status   NotificationStatus   @default(UNREAD)
+
+  createdAt DateTime @default(now())
+
+  @@map("notifications")
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// ACTION PLANS  (Section 10)
+// ─────────────────────────────────────────────────────────────────────────
+
+model ActionType {
+  id              String  @id @default(cuid())
+  name            String  @unique // e.g. "Overdue Lubrication"
+  autoOrManual    String  // "auto" | "manual"
+  defaultPriority String  @default("MEDIUM")
+
+  actionPlans ActionPlan[]
+
+  @@map("action_types")
+}
+
+enum ActionStatus {
+  OPEN
+  IN_PROGRESS
+  WAITING
+  COMPLETED
+  CANCELLED
+}
+
+model ActionPlan {
+  id           String @id @default(cuid())
+  actionTypeId String
+  actionType   ActionType @relation(fields: [actionTypeId], references: [id])
+
+  equipmentId String
+  equipment   Equipment @relation(fields: [equipmentId], references: [id])
+  lpIds       Json      @default("[]") // array of LubricationPoint.id sharing this equipment
+
+  description String
+  priority    String       @default("MEDIUM") // LOW | MEDIUM | HIGH | CRITICAL
+  ownerId     String?
+  owner       User?        @relation("ActionOwner", fields: [ownerId], references: [id])
+  dueDate     DateTime?
+  status      ActionStatus @default(OPEN)
+
+  createdById String?
+  createdBy   User?    @relation("ActionCreatedBy", fields: [createdById], references: [id])
+  createdAt   DateTime @default(now())
+
+  closedDate       DateTime?
+  closureComments  String?
+
+  @@map("action_plans")
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// OIL SAMPLE CENTER  (Section 12.7)
+// ─────────────────────────────────────────────────────────────────────────
+
+enum ReportStatus {
+  NORMAL
+  CAUTION
+  ALERT
+}
+
+model OilSample {
+  id   String @id @default(cuid())
+  lpId String
+  lp   LubricationPoint @relation(fields: [lpId], references: [id])
+
+  sampleIdLab  String  @unique // lab's own sample id, e.g. "26005501225" — dedup key
+  sampledDate  DateTime
+  reportStatus ReportStatus @default(NORMAL) // overall badge: worst cell status
+
+  recommendationsText String?
+  sourcePdfUrl         String?
+
+  uploadedById String?
+  uploadedBy   User?    @relation(fields: [uploadedById], references: [id])
+  uploadedAt   DateTime @default(now())
+
+  parameters OilSampleParameter[]
+
+  @@map("oil_samples")
+}
+
+enum ParamStatus {
+  NORMAL
+  CAUTION
+  ALERT
+}
+
+// Normalized per-cell value+status — required because a cell can carry a
+// Caution/Alert status with NO numeric value present (Section 12.7).
+model OilSampleParameter {
+  id          String @id @default(cuid())
+  oilSampleId String
+  oilSample   OilSample @relation(fields: [oilSampleId], references: [id], onDelete: Cascade)
+
+  paramGroup String // "sample_info" | "lubricant_rating" | "wear_metal" | "contaminant" | "additive" | "physical"
+  paramKey   String // e.g. "Fe", "Visc@40C", "PQ_Index", "Contamination_Rating"
+  paramLabel String // display label, e.g. "Fe (Iron)"
+  unit       String? // "ppm" | "cSt" | "Vol%" | "mg KOH/g" | null
+
+  value  Float?       // nullable — a status can exist with no value
+  status ParamStatus  @default(NORMAL)
+
+  @@unique([oilSampleId, paramKey])
+  @@map("oil_sample_parameters")
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// ROUTES  (Section 12.4)
+// ─────────────────────────────────────────────────────────────────────────
+
+model Route {
+  id             String @id @default(cuid())
+  organizationId String
+  organization   Organization @relation(fields: [organizationId], references: [id])
+
+  name String
+  type String // "static" | "dynamic"
+  lpIds Json  @default("[]")
+
+  assignments RouteAssignment[]
+
+  @@map("routes")
+}
+
+enum AssignmentStatus {
+  ASSIGNED
+  IN_PROGRESS
+  COMPLETED
+}
+
+model RouteAssignment {
+  id     String @id @default(cuid())
+  routeId String
+  route   Route @relation(fields: [routeId], references: [id])
+
+  technicianId String
+  technician   User   @relation(fields: [technicianId], references: [id])
+
+  assignedDate DateTime @default(now())
+  status       AssignmentStatus @default(ASSIGNED)
+  startedAt    DateTime?
+  completedAt  DateTime?
+
+  executionLogs RouteExecutionLog[]
+
+  @@map("route_assignments")
+}
+
+enum ExecStatus {
+  PENDING
+  DONE
+  SKIPPED
+}
+
+model RouteExecutionLog {
+  id String @id @default(cuid())
+
+  routeAssignmentId String
+  routeAssignment   RouteAssignment @relation(fields: [routeAssignmentId], references: [id])
+
+  lpId String
+  lp   LubricationPoint @relation(fields: [lpId], references: [id])
+
+  status      ExecStatus @default(PENDING)
+  skipReason  String?
+  completedAt DateTime?
+
+  @@map("route_execution_log")
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// OIL MANAGEMENT  (Section 11)
+// ─────────────────────────────────────────────────────────────────────────
+
+model OilPurchaseLog {
+  id             String @id @default(cuid())
+  organizationId String
+  organization   Organization @relation(fields: [organizationId], references: [id])
+
+  lubricantTypeId String
+  lubricantType   LubricantType @relation(fields: [lubricantTypeId], references: [id])
+
+  quantityL    Float
+  purchaseDate DateTime
+
+  loggedById String?
+  loggedBy   User?   @relation(fields: [loggedById], references: [id])
+
+  @@map("oil_purchase_log")
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// AUDIT LOG  (Section 9)
+// ─────────────────────────────────────────────────────────────────────────
+
+enum AuditCategory {
+  DATA_EDIT
+  PERMISSION_CHANGE
+  NOTIFICATION_RULE_CHANGE
+  AREA_REASSIGNMENT
+}
+
+model AuditLog {
+  id      String @id @default(cuid())
+  actorId String
+  actor   User   @relation(fields: [actorId], references: [id])
+
+  actionCategory AuditCategory
+  entityType     String
+  entityId       String
+  beforeValue    Json?
+  afterValue     Json?
+  reason         String?
+
+  timestamp DateTime @default(now())
+
+  // The contractor org this log entry must be visible to (transparency
+  // requirement, Section 5 & 9) — null/ACC-only for admin/settings changes.
+  visibleToOrgId String?
+  visibleToOrg   Organization? @relation("AuditVisibleToOrg", fields: [visibleToOrgId], references: [id])
+
+  @@map("audit_log")
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// SETTINGS  (Section 12.12)
+// ─────────────────────────────────────────────────────────────────────────
+
+model Setting {
+  id               String @id @default(cuid())
+  key              String @unique // e.g. "notifications.sender_email", "approval.sla_days"
+  value            String
+  editableByTitle  String? // Title.name allowed to edit, null = Super Admin only
+
+  @@map("settings")
+}

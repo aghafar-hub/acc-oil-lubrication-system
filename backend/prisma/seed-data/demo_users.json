@@ -1,0 +1,11 @@
+[
+  {"name": "Super Admin", "email": "superadmin@acc-oil.app", "titleId": "title-super-admin", "organizationId": null},
+  {"name": "Mona Khalil", "email": "manager@acc.app", "titleId": "title-acc-manager", "organizationId": "org-acc"},
+  {"name": "Tarek Fahmy", "email": "engineer@acc.app", "titleId": "title-acc-engineer", "organizationId": "org-acc"},
+  {"name": "Hassan Aboul-Ela", "email": "manager@rhi.app", "titleId": "title-rhi-manager", "organizationId": "org-rhi"},
+  {"name": "Youssef Ramzy", "email": "engineer@rhi.app", "titleId": "title-rhi-engineer", "organizationId": "org-rhi"},
+  {"name": "Karim Adel", "email": "tech@rhi.app", "titleId": "title-rhi-technician", "organizationId": "org-rhi"},
+  {"name": "Mahmoud Sherif", "email": "manager@asec.app", "titleId": "title-asec-manager", "organizationId": "org-asec"},
+  {"name": "Omar Nabil", "email": "engineer@asec.app", "titleId": "title-asec-engineer", "organizationId": "org-asec"},
+  {"name": "Ahmed Saber", "email": "tech@asec.app", "titleId": "title-asec-technician", "organizationId": "org-asec"}
+]

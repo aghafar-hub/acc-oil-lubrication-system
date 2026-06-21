@@ -1,0 +1,368 @@
+[
+  {
+    "id": "area-111",
+    "locn_code": "111",
+    "name": "Area 111",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-123",
+    "locn_code": "123",
+    "name": "Area 123",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-124",
+    "locn_code": "124",
+    "name": "Area 124",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-131",
+    "locn_code": "131",
+    "name": "Area 131",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-213",
+    "locn_code": "213",
+    "name": "Area 213",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-222",
+    "locn_code": "222",
+    "name": "Area 222",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-241",
+    "locn_code": "241",
+    "name": "Area 241",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-242",
+    "locn_code": "242",
+    "name": "Area 242",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-261",
+    "locn_code": "261",
+    "name": "Area 261",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-262",
+    "locn_code": "262",
+    "name": "Area 262",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-263",
+    "locn_code": "263",
+    "name": "Area 263",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-311",
+    "locn_code": "311",
+    "name": "Area 311",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-312",
+    "locn_code": "312",
+    "name": "Area 312",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-321",
+    "locn_code": "321",
+    "name": "Area 321",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-322",
+    "locn_code": "322",
+    "name": "Area 322",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-331",
+    "locn_code": "331",
+    "name": "Area 331",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-332",
+    "locn_code": "332",
+    "name": "Area 332",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-341",
+    "locn_code": "341",
+    "name": "Area 341",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-342",
+    "locn_code": "342",
+    "name": "Area 342",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-351",
+    "locn_code": "351",
+    "name": "Area 351",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-352",
+    "locn_code": "352",
+    "name": "Area 352",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-421",
+    "locn_code": "421",
+    "name": "Area 421",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-422",
+    "locn_code": "422",
+    "name": "Area 422",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-431",
+    "locn_code": "431",
+    "name": "Area 431",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-432",
+    "locn_code": "432",
+    "name": "Area 432",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-441",
+    "locn_code": "441",
+    "name": "Area 441",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-442",
+    "locn_code": "442",
+    "name": "Area 442",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-451",
+    "locn_code": "451",
+    "name": "Area 451",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-452",
+    "locn_code": "452",
+    "name": "Area 452",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-461",
+    "locn_code": "461",
+    "name": "Area 461",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-462",
+    "locn_code": "462",
+    "name": "Area 462",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-465",
+    "locn_code": "465",
+    "name": "Area 465",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-466",
+    "locn_code": "466",
+    "name": "Area 466",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-471",
+    "locn_code": "471",
+    "name": "Area 471",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-472",
+    "locn_code": "472",
+    "name": "Area 472",
+    "organization_id": "org-rhi"
+  },
+  {
+    "id": "area-481",
+    "locn_code": "481",
+    "name": "Area 481",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-482",
+    "locn_code": "482",
+    "name": "Area 482",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-511",
+    "locn_code": "511",
+    "name": "Area 511",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-512",
+    "locn_code": "512",
+    "name": "Area 512",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-513",
+    "locn_code": "513",
+    "name": "Area 513",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-514",
+    "locn_code": "514",
+    "name": "Area 514",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-531",
+    "locn_code": "531",
+    "name": "Area 531",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-532",
+    "locn_code": "532",
+    "name": "Area 532",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-533",
+    "locn_code": "533",
+    "name": "Area 533",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-534",
+    "locn_code": "534",
+    "name": "Area 534",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-541",
+    "locn_code": "541",
+    "name": "Area 541",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-542",
+    "locn_code": "542",
+    "name": "Area 542",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-543",
+    "locn_code": "543",
+    "name": "Area 543",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-544",
+    "locn_code": "544",
+    "name": "Area 544",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-611",
+    "locn_code": "611",
+    "name": "Area 611",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-612",
+    "locn_code": "612",
+    "name": "Area 612",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-613",
+    "locn_code": "613",
+    "name": "Area 613",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-614",
+    "locn_code": "614",
+    "name": "Area 614",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-621",
+    "locn_code": "621",
+    "name": "Area 621",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-622",
+    "locn_code": "622",
+    "name": "Area 622",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-641",
+    "locn_code": "641",
+    "name": "Area 641",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-642",
+    "locn_code": "642",
+    "name": "Area 642",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-643",
+    "locn_code": "643",
+    "name": "Area 643",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-644",
+    "locn_code": "644",
+    "name": "Area 644",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-645",
+    "locn_code": "645",
+    "name": "Area 645",
+    "organization_id": "org-asec"
+  },
+  {
+    "id": "area-646",
+    "locn_code": "646",
+    "name": "Area 646",
+    "organization_id": "org-asec"
+  }
+]

@@ -1,0 +1,5438 @@
+[
+  {
+    "id": "eq-111.AF040",
+    "equipment_id_code": "111.AF040",
+    "asset_name": "Apron Feeder",
+    "area_id": "area-111",
+    "gearbox_brand": "BREVINI",
+    "op_temp_c": 45,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-111.AF060",
+    "equipment_id_code": "111.AF060",
+    "asset_name": "Apron Feeder",
+    "area_id": "area-111",
+    "gearbox_brand": "BREVINI",
+    "op_temp_c": 52,
+    "annual_rh_actual": 4933
+  },
+  {
+    "id": "eq-111.BC200",
+    "equipment_id_code": "111.BC200",
+    "asset_name": "Belt Conveyor",
+    "area_id": "area-111",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 50,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-111.BC210",
+    "equipment_id_code": "111.BC210",
+    "asset_name": "Belt Conveyor",
+    "area_id": "area-111",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 84,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-111.MS211",
+    "equipment_id_code": "111.MS211",
+    "asset_name": "Magnetic Separator",
+    "area_id": "area-111",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-111.BC330",
+    "equipment_id_code": "111.BC330",
+    "asset_name": "Belt Conveyor",
+    "area_id": "area-111",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 48,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-111.HC100",
+    "equipment_id_code": "111.HC100",
+    "asset_name": "Hammer Crusher",
+    "area_id": "area-111",
+    "gearbox_brand": "Flender",
+    "op_temp_c": 48,
+    "annual_rh_actual": 4933
+  },
+  {
+    "id": "eq-111.RF311",
+    "equipment_id_code": "111.RF311",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-111",
+    "gearbox_brand": "SEW",
+    "op_temp_c": 48,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-111.RF351",
+    "equipment_id_code": "111.RF351",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-111",
+    "gearbox_brand": "SEW",
+    "op_temp_c": 48,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-111.SC301",
+    "equipment_id_code": "111.SC301",
+    "asset_name": "Filter Screw Conveyor",
+    "area_id": "area-111",
+    "gearbox_brand": "SEW",
+    "op_temp_c": 42,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-111.SX041",
+    "equipment_id_code": "111.SX041",
+    "asset_name": "Chain Scraper",
+    "area_id": "area-111",
+    "gearbox_brand": "BREVINI",
+    "op_temp_c": 45,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-111.SX061",
+    "equipment_id_code": "111.SX061",
+    "asset_name": "Chain Scraper",
+    "area_id": "area-111",
+    "gearbox_brand": "BREVINI",
+    "op_temp_c": 45,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-123.BC100",
+    "equipment_id_code": "123.BC100",
+    "asset_name": "Belt Conveyor",
+    "area_id": "area-123",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 45,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-123.BC200",
+    "equipment_id_code": "123.BC200",
+    "asset_name": "Belt Conveyor",
+    "area_id": "area-123",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 50,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-123.BC400",
+    "equipment_id_code": "123.BC400",
+    "asset_name": "Belt Conveyor",
+    "area_id": "area-123",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-123.BC500",
+    "equipment_id_code": "123.BC500",
+    "asset_name": "Belt Conveyor",
+    "area_id": "area-123",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-123.RF151",
+    "equipment_id_code": "123.RF151",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-123",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-123.RF351",
+    "equipment_id_code": "123.RF351",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-123",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-123.RF451",
+    "equipment_id_code": "123.RF451",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-123",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-124.BC300",
+    "equipment_id_code": "124.BC300",
+    "asset_name": "Belt Conveyor",
+    "area_id": "area-124",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-124.BC600",
+    "equipment_id_code": "124.BC600",
+    "asset_name": "Belt Conveyor",
+    "area_id": "area-124",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-124.BC700",
+    "equipment_id_code": "124.BC700",
+    "asset_name": "Belt Conveyor",
+    "area_id": "area-124",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-124.RF551",
+    "equipment_id_code": "124.RF551",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-124",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-124.RF651",
+    "equipment_id_code": "124.RF651",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-124",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-131.BC100",
+    "equipment_id_code": "131.BC100",
+    "asset_name": "Belt Conveyor",
+    "area_id": "area-131",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 55,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-131.BC400",
+    "equipment_id_code": "131.BC400",
+    "asset_name": "Belt Conveyor",
+    "area_id": "area-131",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 65,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-131.BC500",
+    "equipment_id_code": "131.BC500",
+    "asset_name": "Belt Conveyor",
+    "area_id": "area-131",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 56,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-131.BC600",
+    "equipment_id_code": "131.BC600",
+    "asset_name": "Belt Conveyor",
+    "area_id": "area-131",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-131.RE300",
+    "equipment_id_code": "131.RE300",
+    "asset_name": "Reclaimer",
+    "area_id": "area-131",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 45,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-131.RF451",
+    "equipment_id_code": "131.RF451",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-131",
+    "gearbox_brand": "SEW",
+    "op_temp_c": 30,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-131.RF551",
+    "equipment_id_code": "131.RF551",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-131",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-131.ST200",
+    "equipment_id_code": "131.ST200",
+    "asset_name": "Stacker",
+    "area_id": "area-131",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 50,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-213.AF060",
+    "equipment_id_code": "213.AF060",
+    "asset_name": "Apron feeder",
+    "area_id": "area-213",
+    "gearbox_brand": "BREVINI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-213.SX061",
+    "equipment_id_code": "213.SX061",
+    "asset_name": "Chain scraper",
+    "area_id": "area-213",
+    "gearbox_brand": "BREVINI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-213.BC200",
+    "equipment_id_code": "213.BC200",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-213",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-213.RF211",
+    "equipment_id_code": "213.RF211",
+    "asset_name": "Air-lock",
+    "area_id": "area-213",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-213.RF311",
+    "equipment_id_code": "213.RF311",
+    "asset_name": "Air-lock",
+    "area_id": "area-213",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-213.BC320",
+    "equipment_id_code": "213.BC320",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-213",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-213.RF331",
+    "equipment_id_code": "213.RF331",
+    "asset_name": "Air-lock",
+    "area_id": "area-213",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-213.RF351",
+    "equipment_id_code": "213.RF351",
+    "asset_name": "Air-lock",
+    "area_id": "area-213",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-213.BC360",
+    "equipment_id_code": "213.BC360",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-213",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-213.RF371",
+    "equipment_id_code": "213.RF371",
+    "asset_name": "Air-lock",
+    "area_id": "area-213",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-213.BC380",
+    "equipment_id_code": "213.BC380",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-213",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-213.RF401",
+    "equipment_id_code": "213.RF401",
+    "asset_name": "Air-lock",
+    "area_id": "area-213",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-213.BC420",
+    "equipment_id_code": "213.BC420",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-213",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-213.RF441",
+    "equipment_id_code": "213.RF441",
+    "asset_name": "Air-lock",
+    "area_id": "area-213",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-213.BC460",
+    "equipment_id_code": "213.BC460",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-213",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-222.BC110",
+    "equipment_id_code": "222.BC110",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-222",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-222.RF121",
+    "equipment_id_code": "222.RF121",
+    "asset_name": "Air-lock",
+    "area_id": "area-222",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-222.BC130",
+    "equipment_id_code": "222.BC130",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-222",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-222.RF371",
+    "equipment_id_code": "222.RF371",
+    "asset_name": "Air-lock",
+    "area_id": "area-222",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-222.BC380",
+    "equipment_id_code": "222.BC380",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-222",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-222.RF401",
+    "equipment_id_code": "222.RF401",
+    "asset_name": "Air-lock",
+    "area_id": "area-222",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-222.BC420",
+    "equipment_id_code": "222.BC420",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-222",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-222.RF441",
+    "equipment_id_code": "222.RF441",
+    "asset_name": "Air-lock",
+    "area_id": "area-222",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-222.BC460",
+    "equipment_id_code": "222.BC460",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-222",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-241.RF051",
+    "equipment_id_code": "241.RF051",
+    "asset_name": "Rotary air lock  PAM-F200, incl. drive",
+    "area_id": "area-241",
+    "gearbox_brand": null,
+    "op_temp_c": 42,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-241.BC100",
+    "equipment_id_code": "241.BC100",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-241",
+    "gearbox_brand": null,
+    "op_temp_c": 53,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-241.BC120",
+    "equipment_id_code": "241.BC120",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-241",
+    "gearbox_brand": null,
+    "op_temp_c": 56,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-241.MS121",
+    "equipment_id_code": "241.MS121",
+    "asset_name": "Magnetic separator SE-730 - MS121M1",
+    "area_id": "area-241",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-241.RF201",
+    "equipment_id_code": "241.RF201",
+    "asset_name": "Rotary air lock  PAM-F200, incl. drive",
+    "area_id": "area-241",
+    "gearbox_brand": null,
+    "op_temp_c": 41,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-241.BC300",
+    "equipment_id_code": "241.BC300",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-241",
+    "gearbox_brand": null,
+    "op_temp_c": 40,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-241.WF450",
+    "equipment_id_code": "241.WF450",
+    "asset_name": "Dosax weight l, Pfister",
+    "area_id": "area-241",
+    "gearbox_brand": null,
+    "op_temp_c": 47,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-241.WF550",
+    "equipment_id_code": "241.WF550",
+    "asset_name": "Dosax weight l, Pfister",
+    "area_id": "area-241",
+    "gearbox_brand": null,
+    "op_temp_c": 40,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-241.BC600",
+    "equipment_id_code": "241.BC600",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-241",
+    "gearbox_brand": null,
+    "op_temp_c": 50,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-241.RF651",
+    "equipment_id_code": "241.RF651",
+    "asset_name": "Rotary air lock  PAM-F200, incl. drive",
+    "area_id": "area-241",
+    "gearbox_brand": null,
+    "op_temp_c": 45,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-241.BC350",
+    "equipment_id_code": "241.BC350",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-241",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-531.RF241",
+    "equipment_id_code": "531.RF241",
+    "asset_name": "Air-lock",
+    "area_id": "area-241",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-242.BC300",
+    "equipment_id_code": "242.BC300",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-242",
+    "gearbox_brand": null,
+    "op_temp_c": 33,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-242.WF450",
+    "equipment_id_code": "242.WF450",
+    "asset_name": "Dosax standing weigh feeder",
+    "area_id": "area-242",
+    "gearbox_brand": null,
+    "op_temp_c": 45,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-242.WF550",
+    "equipment_id_code": "242.WF550",
+    "asset_name": "Dosax standing weigh feeder",
+    "area_id": "area-242",
+    "gearbox_brand": null,
+    "op_temp_c": 42,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-242.BC600",
+    "equipment_id_code": "242.BC600",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-242",
+    "gearbox_brand": null,
+    "op_temp_c": 41,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-261.BC010",
+    "equipment_id_code": "261.BC010",
+    "asset_name": "Belt Conveyor",
+    "area_id": "area-261",
+    "gearbox_brand": null,
+    "op_temp_c": 50,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-261.CV100",
+    "equipment_id_code": "261.CV100",
+    "asset_name": "Drag chain",
+    "area_id": "area-261",
+    "gearbox_brand": null,
+    "op_temp_c": 41,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-261.RE310",
+    "equipment_id_code": "261.RE310",
+    "asset_name": "Overhead Reclaimer",
+    "area_id": "area-261",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-261.SC410",
+    "equipment_id_code": "261.SC410",
+    "asset_name": "Double discharge screw conveyor",
+    "area_id": "area-261",
+    "gearbox_brand": "SEW",
+    "op_temp_c": 40,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-261.CV600",
+    "equipment_id_code": "261.CV600",
+    "asset_name": "Drag chain",
+    "area_id": "area-261",
+    "gearbox_brand": null,
+    "op_temp_c": 41,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-261.RL810",
+    "equipment_id_code": "261.RL810",
+    "asset_name": "Rotor weigh feeder",
+    "area_id": "area-261",
+    "gearbox_brand": null,
+    "op_temp_c": 50,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-261.RF840",
+    "equipment_id_code": "261.RF840",
+    "asset_name": "PFISTER rotary valve",
+    "area_id": "area-261",
+    "gearbox_brand": null,
+    "op_temp_c": 45,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-261.BC620",
+    "equipment_id_code": "261.BC620",
+    "asset_name": "Pipe conveyor",
+    "area_id": "area-261",
+    "gearbox_brand": null,
+    "op_temp_c": 55,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-261.SH050",
+    "equipment_id_code": "261.SH050",
+    "asset_name": "Shredder",
+    "area_id": "area-261",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-261.RF053",
+    "equipment_id_code": "261.RF053",
+    "asset_name": "rotary feeder fro dedusting filter",
+    "area_id": "area-261",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-261.RF607",
+    "equipment_id_code": "261.RF607",
+    "asset_name": "rotary feeder fro dedusting filter",
+    "area_id": "area-261",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-261.MS015",
+    "equipment_id_code": "261.MS015",
+    "asset_name": "Magnetic separator",
+    "area_id": "area-261",
+    "gearbox_brand": null,
+    "op_temp_c": 50,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-261.SC104",
+    "equipment_id_code": "261.SC104",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-261",
+    "gearbox_brand": "SEW",
+    "op_temp_c": 47,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-261.SC105",
+    "equipment_id_code": "261.SC105",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-261",
+    "gearbox_brand": "SEW",
+    "op_temp_c": 37,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-262.WF200",
+    "equipment_id_code": "262.WF200",
+    "asset_name": "Weigh feeder",
+    "area_id": "area-262",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-263.AF010",
+    "equipment_id_code": "263.AF010",
+    "asset_name": "Cargo Floor platform",
+    "area_id": "area-263",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-263.CV100",
+    "equipment_id_code": "263.CV100",
+    "asset_name": "Rake feeder",
+    "area_id": "area-263",
+    "gearbox_brand": null,
+    "op_temp_c": 50,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-263.CV120",
+    "equipment_id_code": "263.CV120",
+    "asset_name": "Leveling drag chain",
+    "area_id": "area-263",
+    "gearbox_brand": null,
+    "op_temp_c": 55,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-263.WF200",
+    "equipment_id_code": "263.WF200",
+    "asset_name": "Weigh feeder Type: WW200-150",
+    "area_id": "area-263",
+    "gearbox_brand": null,
+    "op_temp_c": 51,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-263.MS205",
+    "equipment_id_code": "263.MS205",
+    "asset_name": "Over belt Magnet",
+    "area_id": "area-263",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-263.BC500",
+    "equipment_id_code": "263.BC500",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-263",
+    "gearbox_brand": null,
+    "op_temp_c": 53,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-263.BC600",
+    "equipment_id_code": "263.BC600",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-263",
+    "gearbox_brand": null,
+    "op_temp_c": 50,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-263.SM602",
+    "equipment_id_code": "263.SM602",
+    "asset_name": "Manual Sampler for AF, L=900",
+    "area_id": "area-263",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-263.AC700",
+    "equipment_id_code": "263.AC700",
+    "asset_name": "Apron feeder",
+    "area_id": "area-263",
+    "gearbox_brand": null,
+    "op_temp_c": 55,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-311.BC600",
+    "equipment_id_code": "311.BC600",
+    "asset_name": "Belt Conveyor",
+    "area_id": "area-311",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 50,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-311.BC620",
+    "equipment_id_code": "311.BC620",
+    "asset_name": "Belt Conveyor",
+    "area_id": "area-311",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 52,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-311.MS601",
+    "equipment_id_code": "311.MS601",
+    "asset_name": "Magnetic Separator",
+    "area_id": "area-311",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-311.RF612",
+    "equipment_id_code": "311.RF612",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-311",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-311.RF651",
+    "equipment_id_code": "311.RF651",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-311",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-311.SC611",
+    "equipment_id_code": "311.SC611",
+    "asset_name": "Filter Screw Conveyor",
+    "area_id": "area-311",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-311.SX151",
+    "equipment_id_code": "311.SX151",
+    "asset_name": "Chain Scraper",
+    "area_id": "area-311",
+    "gearbox_brand": "Lenze",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-311.SX251",
+    "equipment_id_code": "311.SX251",
+    "asset_name": "Chain Scraper",
+    "area_id": "area-311",
+    "gearbox_brand": "Lenze",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-311.WF150",
+    "equipment_id_code": "311.WF150",
+    "asset_name": "Dosimat weigh feeder",
+    "area_id": "area-311",
+    "gearbox_brand": "SEW",
+    "op_temp_c": 50,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-311.WF250",
+    "equipment_id_code": "311.WF250",
+    "asset_name": "Dosimat weigh feeder",
+    "area_id": "area-311",
+    "gearbox_brand": "SEW",
+    "op_temp_c": 45,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-311.WF350",
+    "equipment_id_code": "311.WF350",
+    "asset_name": "Dosax weigh feeder",
+    "area_id": "area-311",
+    "gearbox_brand": "SEW",
+    "op_temp_c": 40,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-311.WF450",
+    "equipment_id_code": "311.WF450",
+    "asset_name": "Dosax weigh feeder",
+    "area_id": "area-311",
+    "gearbox_brand": "SEW",
+    "op_temp_c": 45,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-312.WF150",
+    "equipment_id_code": "312.WF150",
+    "asset_name": "Dosax weigh feeder",
+    "area_id": "area-312",
+    "gearbox_brand": null,
+    "op_temp_c": 45,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-312.SX151",
+    "equipment_id_code": "312.SX151",
+    "asset_name": "Chain Scraper",
+    "area_id": "area-312",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-312.WF250",
+    "equipment_id_code": "312.WF250",
+    "asset_name": "Dosax weigh feeder",
+    "area_id": "area-312",
+    "gearbox_brand": null,
+    "op_temp_c": 40,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-312.SX251",
+    "equipment_id_code": "312.SX251",
+    "asset_name": "Chain Scraper",
+    "area_id": "area-312",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-312.WF350",
+    "equipment_id_code": "312.WF350",
+    "asset_name": "Dosax weigh feeder",
+    "area_id": "area-312",
+    "gearbox_brand": null,
+    "op_temp_c": 40,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-312.WF450",
+    "equipment_id_code": "312.WF450",
+    "asset_name": "Dosax weigh feeder",
+    "area_id": "area-312",
+    "gearbox_brand": null,
+    "op_temp_c": 40,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-312.BC600",
+    "equipment_id_code": "312.BC600",
+    "asset_name": "Belt Conveyor",
+    "area_id": "area-312",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 45,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-312.MS601",
+    "equipment_id_code": "312.MS601",
+    "asset_name": "Magnetic Separator",
+    "area_id": "area-312",
+    "gearbox_brand": null,
+    "op_temp_c": 48,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-312.SC611",
+    "equipment_id_code": "312.SC611",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-312",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-312.RF612",
+    "equipment_id_code": "312.RF612",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-312",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-312.BC620",
+    "equipment_id_code": "312.BC620",
+    "asset_name": "Belt Conveyor",
+    "area_id": "area-312",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 51,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-312.RF626",
+    "equipment_id_code": "312.RF626",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-312",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-312.BC630",
+    "equipment_id_code": "312.BC630",
+    "asset_name": "Belt Conveyor",
+    "area_id": "area-312",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 52,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-312.RF636",
+    "equipment_id_code": "312.RF636",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-312",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-312.BC640",
+    "equipment_id_code": "312.BC640",
+    "asset_name": "Belt Conveyor",
+    "area_id": "area-312",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 50,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-312.RF651",
+    "equipment_id_code": "312.RF651",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-312",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-321.BC010",
+    "equipment_id_code": "321.BC010",
+    "asset_name": "Belt Conveyor",
+    "area_id": "area-321",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 45,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-321.BE220",
+    "equipment_id_code": "321.BE220",
+    "asset_name": "Bucket Elevator",
+    "area_id": "area-321",
+    "gearbox_brand": "Motox",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-321.FN400",
+    "equipment_id_code": "321.FN400",
+    "asset_name": "Raw Mill Fan",
+    "area_id": "area-321",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-321.HY110",
+    "equipment_id_code": "321.HY110",
+    "asset_name": "Mill Hydraulic tensioning system",
+    "area_id": "area-321",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-321.LQ120",
+    "equipment_id_code": "321.LQ120",
+    "asset_name": "Mill Roller Lubrication system",
+    "area_id": "area-321",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-321.LQ145",
+    "equipment_id_code": "321.LQ145",
+    "asset_name": "Mill Gear lubrication pump unit",
+    "area_id": "area-321",
+    "gearbox_brand": null,
+    "op_temp_c": 55,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-321.MD152",
+    "equipment_id_code": "321.MD152",
+    "asset_name": "Dynamic Separator Main drive, lubrication LQ",
+    "area_id": "area-321",
+    "gearbox_brand": "Flender",
+    "op_temp_c": 55,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-321.RF021",
+    "equipment_id_code": "321.RF021",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-321",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-321.RF090",
+    "equipment_id_code": "321.RF090",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-321",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": 5578
+  },
+  {
+    "id": "eq-321.RF302",
+    "equipment_id_code": "321.RF302",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-321",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-321.RF312",
+    "equipment_id_code": "321.RF312",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-321",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-321.RF322",
+    "equipment_id_code": "321.RF322",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-321",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-321.RF332",
+    "equipment_id_code": "321.RF332",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-321",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-321.RF551",
+    "equipment_id_code": "321.RF551",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-321",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-321.SM545",
+    "equipment_id_code": "321.SM545",
+    "asset_name": "Sampler",
+    "area_id": "area-321",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-322.RF021",
+    "equipment_id_code": "322.RF021",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-322",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-322.RF090",
+    "equipment_id_code": "322.RF090",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-322",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": 5771
+  },
+  {
+    "id": "eq-322.HY110",
+    "equipment_id_code": "322.HY110",
+    "asset_name": "Mill Hydraulic tensioning system",
+    "area_id": "area-322",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-322.LQ145",
+    "equipment_id_code": "322.LQ145",
+    "asset_name": "Mill Gear lubrication pump unit",
+    "area_id": "area-322",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-322.LQ120",
+    "equipment_id_code": "322.LQ120",
+    "asset_name": "Mill Roller Lubrication system",
+    "area_id": "area-322",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-322.MD152",
+    "equipment_id_code": "322.MD152",
+    "asset_name": "Dynamic Separator Main drive, lubrication LQ",
+    "area_id": "area-322",
+    "gearbox_brand": "Flender",
+    "op_temp_c": 70,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-322.BE220",
+    "equipment_id_code": "322.BE220",
+    "asset_name": "Bucket Elevator",
+    "area_id": "area-322",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-322.RF291",
+    "equipment_id_code": "322.RF291",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-322",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-322.RF302",
+    "equipment_id_code": "322.RF302",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-322",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-322.RF312",
+    "equipment_id_code": "322.RF312",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-322",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-322.RF322",
+    "equipment_id_code": "322.RF322",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-322",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-322.RF332",
+    "equipment_id_code": "322.RF332",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-322",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-322.FN400",
+    "equipment_id_code": "322.FN400",
+    "asset_name": "Raw Mill Fan",
+    "area_id": "area-322",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-322.SM545",
+    "equipment_id_code": "322.SM545",
+    "asset_name": "Sampler automatic",
+    "area_id": "area-322",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-322.BC010",
+    "equipment_id_code": "322.BC010",
+    "asset_name": "Belt Conveyor",
+    "area_id": "area-322",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 45,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-322.BC200",
+    "equipment_id_code": "322.BC200",
+    "asset_name": "Belt Conveyor",
+    "area_id": "area-322",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 40,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-322.RF551",
+    "equipment_id_code": "322.RF551",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-322",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-322.DG050",
+    "equipment_id_code": "322.DG050",
+    "asset_name": "Divding gate",
+    "area_id": "area-322",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-331 RF304",
+    "equipment_id_code": "331 RF304",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-331",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-331 RF661",
+    "equipment_id_code": "331 RF661",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-331",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-331.CV301",
+    "equipment_id_code": "331.CV301",
+    "asset_name": "Drag chain",
+    "area_id": "area-331",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-331.CV303",
+    "equipment_id_code": "331.CV303",
+    "asset_name": "Drag chain",
+    "area_id": "area-331",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-331.EP300",
+    "equipment_id_code": "331.EP300",
+    "asset_name": "Main Electrostatic Precipitator",
+    "area_id": "area-331",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-331.FN110",
+    "equipment_id_code": "331.FN110",
+    "asset_name": "ID-Fan",
+    "area_id": "area-331",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-331.FN400",
+    "equipment_id_code": "331.FN400",
+    "asset_name": "Electrostatic Precipitator Fan",
+    "area_id": "area-331",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-331.FV230",
+    "equipment_id_code": "331.FV230",
+    "asset_name": "Flap valve (motorized)",
+    "area_id": "area-331",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-331.GS491",
+    "equipment_id_code": "331.GS491",
+    "asset_name": "Screw conveyor greasing system",
+    "area_id": "area-331",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-331.GS501",
+    "equipment_id_code": "331.GS501",
+    "asset_name": "Screw conveyor greasing system",
+    "area_id": "area-331",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-331.GS511",
+    "equipment_id_code": "331.GS511",
+    "asset_name": "Screw conveyor greasing system",
+    "area_id": "area-331",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-331.RF240",
+    "equipment_id_code": "331.RF240",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-331",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-331.RF302",
+    "equipment_id_code": "331.RF302",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-331",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-331.RF499",
+    "equipment_id_code": "331.RF499",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-331",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-331.SC220",
+    "equipment_id_code": "331.SC220",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-331",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-331.SC490",
+    "equipment_id_code": "331.SC490",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-331",
+    "gearbox_brand": "SEW",
+    "op_temp_c": 48,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-331.SC500",
+    "equipment_id_code": "331.SC500",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-331",
+    "gearbox_brand": "SEW",
+    "op_temp_c": 48,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-331.SC510",
+    "equipment_id_code": "331.SC510",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-331",
+    "gearbox_brand": "SEW",
+    "op_temp_c": 48,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-332.FN110",
+    "equipment_id_code": "332.FN110",
+    "asset_name": "ID-Fan",
+    "area_id": "area-332",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-332.SC220",
+    "equipment_id_code": "332.SC220",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-332",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-332.FV230",
+    "equipment_id_code": "332.FV230",
+    "asset_name": "Flap valve (motorized)",
+    "area_id": "area-332",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-332.RF235",
+    "equipment_id_code": "332.RF235",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-332",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-332.EP300",
+    "equipment_id_code": "332.EP300",
+    "asset_name": "Electrostatic Precipitator",
+    "area_id": "area-332",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-332.CV301",
+    "equipment_id_code": "332.CV301",
+    "asset_name": "Drag Chain",
+    "area_id": "area-332",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-332.CV303",
+    "equipment_id_code": "332.CV303",
+    "asset_name": "Drag Chain",
+    "area_id": "area-332",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-332.RF302",
+    "equipment_id_code": "332.RF302",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-332",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-332.RF304",
+    "equipment_id_code": "332.RF304",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-332",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-332.FN400",
+    "equipment_id_code": "332.FN400",
+    "asset_name": "Electrostatic Precipitator Fan",
+    "area_id": "area-332",
+    "gearbox_brand": "Flender",
+    "op_temp_c": 57,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-332.SC490",
+    "equipment_id_code": "332.SC490",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-332",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-332.GS491",
+    "equipment_id_code": "332.GS491",
+    "asset_name": "Screw conveyor greasing system",
+    "area_id": "area-332",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-332.RF499",
+    "equipment_id_code": "332.RF499",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-332",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-332.SC500",
+    "equipment_id_code": "332.SC500",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-332",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-332.GS501",
+    "equipment_id_code": "332.GS501",
+    "asset_name": "Screw conveyor greasing system",
+    "area_id": "area-332",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-332.SC510",
+    "equipment_id_code": "332.SC510",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-332",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-332.GS511",
+    "equipment_id_code": "332.GS511",
+    "asset_name": "Screw conveyor greasing system",
+    "area_id": "area-332",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-332.SC530",
+    "equipment_id_code": "332.SC530",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-332",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-332.GS531",
+    "equipment_id_code": "332.GS531",
+    "asset_name": "Screw conveyor greasing system",
+    "area_id": "area-332",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-332.SC540",
+    "equipment_id_code": "332.SC540",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-332",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-332.GS541",
+    "equipment_id_code": "332.GS541",
+    "asset_name": "Screw conveyor greasing system",
+    "area_id": "area-332",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-332.RF661",
+    "equipment_id_code": "332.RF661",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-332",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-332.RF665",
+    "equipment_id_code": "332.RF665",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-332",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-341.BL052",
+    "equipment_id_code": "341.BL052",
+    "asset_name": "Rotary blower",
+    "area_id": "area-341",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-341.BL053",
+    "equipment_id_code": "341.BL053",
+    "asset_name": "Rotary blower",
+    "area_id": "area-341",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-341.BL054",
+    "equipment_id_code": "341.BL054",
+    "asset_name": "Rotary blower",
+    "area_id": "area-341",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-341.BL055",
+    "equipment_id_code": "341.BL055",
+    "asset_name": "Rotary blower",
+    "area_id": "area-341",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-341.BL300",
+    "equipment_id_code": "341.BL300",
+    "asset_name": "Rotary blower",
+    "area_id": "area-341",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-341.BL305",
+    "equipment_id_code": "341.BL305",
+    "asset_name": "Rotary blower",
+    "area_id": "area-341",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-341.BL310",
+    "equipment_id_code": "341.BL310",
+    "asset_name": "Rotary blower",
+    "area_id": "area-341",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-341.RF071",
+    "equipment_id_code": "341.RF071",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-341",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-341.RF411",
+    "equipment_id_code": "341.RF411",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-341",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-341.SC081",
+    "equipment_id_code": "341.SC081",
+    "asset_name": "Filter Screw Conveyor",
+    "area_id": "area-341",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-341.SC421",
+    "equipment_id_code": "341.SC421",
+    "asset_name": "Filter Screw Conveyor",
+    "area_id": "area-341",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-341.BE040",
+    "equipment_id_code": "341.BE040",
+    "asset_name": "Bucket Elevator",
+    "area_id": "area-341",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-342.BE050",
+    "equipment_id_code": "342.BE050",
+    "asset_name": "Bucket Elevator",
+    "area_id": "area-342",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-342.BL300",
+    "equipment_id_code": "342.BL300",
+    "asset_name": "Rotary blower",
+    "area_id": "area-342",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-342.BL305",
+    "equipment_id_code": "342.BL305",
+    "asset_name": "Rotary blower",
+    "area_id": "area-342",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-342.BL310",
+    "equipment_id_code": "342.BL310",
+    "asset_name": "Rotary blower",
+    "area_id": "area-342",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-342.RF401",
+    "equipment_id_code": "342.RF401",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-342",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-351.BL110",
+    "equipment_id_code": "351.BL110",
+    "asset_name": "Rotary blower",
+    "area_id": "area-351",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-351.BL115",
+    "equipment_id_code": "351.BL115",
+    "asset_name": "Rotary blower",
+    "area_id": "area-351",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-351.BL342",
+    "equipment_id_code": "351.BL342",
+    "asset_name": "Rotary blower",
+    "area_id": "area-351",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-351.BL343",
+    "equipment_id_code": "351.BL343",
+    "asset_name": "Rotary blower",
+    "area_id": "area-351",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-351.BL344",
+    "equipment_id_code": "351.BL344",
+    "asset_name": "Rotary blower",
+    "area_id": "area-351",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-351.BL345",
+    "equipment_id_code": "351.BL345",
+    "asset_name": "Rotary blower",
+    "area_id": "area-351",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-351.BL346",
+    "equipment_id_code": "351.BL346",
+    "asset_name": "Rotary blower",
+    "area_id": "area-351",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-351.BL347",
+    "equipment_id_code": "351.BL347",
+    "asset_name": "Rotary blower",
+    "area_id": "area-351",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-351.BL348",
+    "equipment_id_code": "351.BL348",
+    "asset_name": "Rotary blower",
+    "area_id": "area-351",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-351.RF401",
+    "equipment_id_code": "351.RF401",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-351",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-351.SM310",
+    "equipment_id_code": "351.SM310",
+    "asset_name": "Sampler",
+    "area_id": "area-351",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-351.RF370",
+    "equipment_id_code": "351.RF370",
+    "asset_name": "Kiln feed RF",
+    "area_id": "area-351",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-351.RF366",
+    "equipment_id_code": "351.RF366",
+    "asset_name": "Rotary feeder",
+    "area_id": "area-351",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-351.BE350",
+    "equipment_id_code": "351.BE350",
+    "asset_name": "Bucket Elevator",
+    "area_id": "area-351",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-352.BE340",
+    "equipment_id_code": "352.BE340",
+    "asset_name": "Bucket Elevator",
+    "area_id": "area-352",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-352.BL110",
+    "equipment_id_code": "352.BL110",
+    "asset_name": "Rotary blower",
+    "area_id": "area-352",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-352.BL115",
+    "equipment_id_code": "352.BL115",
+    "asset_name": "Rotary blower",
+    "area_id": "area-352",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-352.SM250",
+    "equipment_id_code": "352.SM250",
+    "asset_name": "Sampler automatic",
+    "area_id": "area-352",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-352.SM310",
+    "equipment_id_code": "352.SM310",
+    "asset_name": "Sampler automatic",
+    "area_id": "area-352",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-352.RF360",
+    "equipment_id_code": "352.RF360",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-352",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-352.RF401",
+    "equipment_id_code": "352.RF401",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-352",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-352.RF406",
+    "equipment_id_code": "352.RF406",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-352",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-352.RF411",
+    "equipment_id_code": "352.RF411",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-352",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-352.DG352",
+    "equipment_id_code": "352.DG352",
+    "asset_name": "Divding gate",
+    "area_id": "area-352",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-352.DG420",
+    "equipment_id_code": "352.DG420",
+    "asset_name": "Divding gate",
+    "area_id": "area-352",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-421.DG180",
+    "equipment_id_code": "421.DG180",
+    "asset_name": "Dividing Gate",
+    "area_id": "area-421",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-421.SD420",
+    "equipment_id_code": "421.SD420",
+    "asset_name": "Hoisting Damper",
+    "area_id": "area-421",
+    "gearbox_brand": "S97AD3PB3AB DT100LS4",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-421.FV770",
+    "equipment_id_code": "421.FV770",
+    "asset_name": "Triple flap gate",
+    "area_id": "area-421",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-421.HR700",
+    "equipment_id_code": "421.HR700",
+    "asset_name": "HOTDISC Drive (A)",
+    "area_id": "area-421",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-422.BQ185",
+    "equipment_id_code": "422.BQ185",
+    "asset_name": "Air blaster",
+    "area_id": "area-422",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-431.AD145",
+    "equipment_id_code": "431.AD145",
+    "asset_name": "Kiln Auxiliary drive",
+    "area_id": "area-431",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-431.HT120",
+    "equipment_id_code": "431.HT120",
+    "asset_name": "Hydraulic thrust device",
+    "area_id": "area-431",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-431.KB101",
+    "equipment_id_code": "431.KB101",
+    "asset_name": "Kiln support No. 1",
+    "area_id": "area-431",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-431.KB102",
+    "equipment_id_code": "431.KB102",
+    "asset_name": "Kiln support No. 2",
+    "area_id": "area-431",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-431.KB103",
+    "equipment_id_code": "431.KB103",
+    "asset_name": "Kiln support No. 3",
+    "area_id": "area-431",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-431.MD140",
+    "equipment_id_code": "431.MD140",
+    "asset_name": "Kiln Main drive",
+    "area_id": "area-431",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": 7417
+  },
+  {
+    "id": "eq-432.KB101",
+    "equipment_id_code": "432.KB101",
+    "asset_name": "Kiln support No. 1",
+    "area_id": "area-432",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-432.KB102",
+    "equipment_id_code": "432.KB102",
+    "asset_name": "Kiln support No. 2",
+    "area_id": "area-432",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-432.KB103",
+    "equipment_id_code": "432.KB103",
+    "asset_name": "Kiln support No. 3",
+    "area_id": "area-432",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-432.HT120",
+    "equipment_id_code": "432.HT120",
+    "asset_name": "Hydraulic thrust device",
+    "area_id": "area-432",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-432.MD140",
+    "equipment_id_code": "432.MD140",
+    "asset_name": "Kiln Main drive",
+    "area_id": "area-432",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": 7101
+  },
+  {
+    "id": "eq-432.AD145",
+    "equipment_id_code": "432.AD145",
+    "asset_name": "Kiln drive",
+    "area_id": "area-432",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-441.CV551",
+    "equipment_id_code": "441.CV551",
+    "asset_name": "Drag chain",
+    "area_id": "area-441",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-441.CV553",
+    "equipment_id_code": "441.CV553",
+    "asset_name": "Drag chain",
+    "area_id": "area-441",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-441.CV600",
+    "equipment_id_code": "441.CV600",
+    "asset_name": "Drag chain",
+    "area_id": "area-441",
+    "gearbox_brand": "BREVINI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-441.CV610",
+    "equipment_id_code": "441.CV610",
+    "asset_name": "Drag chain",
+    "area_id": "area-441",
+    "gearbox_brand": "BREVINI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-441.CV620",
+    "equipment_id_code": "441.CV620",
+    "asset_name": "Drag chain",
+    "area_id": "area-441",
+    "gearbox_brand": "BREVINI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-441.EP550",
+    "equipment_id_code": "441.EP550",
+    "asset_name": "Cooler Electrostatic Precipitator",
+    "area_id": "area-441",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-441.FN590",
+    "equipment_id_code": "441.FN590",
+    "asset_name": "Cooler ESP Fan",
+    "area_id": "area-441",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-441.MD140",
+    "equipment_id_code": "441.MD140",
+    "asset_name": "Cooler hydraulic drive",
+    "area_id": "area-441",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-441.RF552",
+    "equipment_id_code": "441.RF552",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-441",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-441.RF554",
+    "equipment_id_code": "441.RF554",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-441",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-441.RF661",
+    "equipment_id_code": "441.RF661",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-441",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-441.BQ10",
+    "equipment_id_code": "441.BQ10",
+    "asset_name": "Air blaster",
+    "area_id": "area-441",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-442.CV551",
+    "equipment_id_code": "442.CV551",
+    "asset_name": "Drag Chain",
+    "area_id": "area-442",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-442.CV553",
+    "equipment_id_code": "442.CV553",
+    "asset_name": "Drag Chain",
+    "area_id": "area-442",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-442.CV600",
+    "equipment_id_code": "442.CV600",
+    "asset_name": "Drag Chain",
+    "area_id": "area-442",
+    "gearbox_brand": "BREVINI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-442.CV610",
+    "equipment_id_code": "442.CV610",
+    "asset_name": "Drag Chain",
+    "area_id": "area-442",
+    "gearbox_brand": "BREVINI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-442.CV620",
+    "equipment_id_code": "442.CV620",
+    "asset_name": "Drag Chain",
+    "area_id": "area-442",
+    "gearbox_brand": "BREVINI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-442.EP550",
+    "equipment_id_code": "442.EP550",
+    "asset_name": "Electrostatic Precipitator",
+    "area_id": "area-442",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-442.FN590",
+    "equipment_id_code": "442.FN590",
+    "asset_name": "Cooler ESP Fan",
+    "area_id": "area-442",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-442.MD140",
+    "equipment_id_code": "442.MD140",
+    "asset_name": "Cooler hydraulic drive",
+    "area_id": "area-442",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-442.RF552",
+    "equipment_id_code": "442.RF552",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-442",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-442.RF554",
+    "equipment_id_code": "442.RF554",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-442",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-442.RF661",
+    "equipment_id_code": "442.RF661",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-442",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-451.BE310",
+    "equipment_id_code": "451.BE310",
+    "asset_name": "Bucket Elevator",
+    "area_id": "area-451",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-451.CV202",
+    "equipment_id_code": "451.CV202",
+    "asset_name": "Drag chain",
+    "area_id": "area-451",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-451.EP200",
+    "equipment_id_code": "451.EP200",
+    "asset_name": "Bypass Electrostatic Precipitator",
+    "area_id": "area-451",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-451.FV130",
+    "equipment_id_code": "451.FV130",
+    "asset_name": "Flap valve (motorized)",
+    "area_id": "area-451",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-451.GS151",
+    "equipment_id_code": "451.GS151",
+    "asset_name": "Screw conveyor greasing system",
+    "area_id": "area-451",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-451.GS301",
+    "equipment_id_code": "451.GS301",
+    "asset_name": "Screw conveyor greasing system",
+    "area_id": "area-451",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-451.GS331",
+    "equipment_id_code": "451.GS331",
+    "asset_name": "Screw conveyor greasing system",
+    "area_id": "area-451",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-451.RF135",
+    "equipment_id_code": "451.RF135",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-451",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-451.Rf201",
+    "equipment_id_code": "451.Rf201",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-451",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-451.RF611",
+    "equipment_id_code": "451.RF611",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-451",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-451.RF651",
+    "equipment_id_code": "451.RF651",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-451",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-451.SC120",
+    "equipment_id_code": "451.SC120",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-451",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-451.SC150",
+    "equipment_id_code": "451.SC150",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-451",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-451.SC300",
+    "equipment_id_code": "451.SC300",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-451",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-451.SC330",
+    "equipment_id_code": "451.SC330",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-451",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-451.SC460",
+    "equipment_id_code": "451.SC460",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-451",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-452.BE310",
+    "equipment_id_code": "452.BE310",
+    "asset_name": "Bucket Elevator",
+    "area_id": "area-452",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-452.CV201",
+    "equipment_id_code": "452.CV201",
+    "asset_name": "Drag Chain",
+    "area_id": "area-452",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-452.EP200",
+    "equipment_id_code": "452.EP200",
+    "asset_name": "Electrostatic Precipitator",
+    "area_id": "area-452",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-452.FV130",
+    "equipment_id_code": "452.FV130",
+    "asset_name": "Flap valve (motorized)",
+    "area_id": "area-452",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-452.GS151",
+    "equipment_id_code": "452.GS151",
+    "asset_name": "Screw conveyor greasing system",
+    "area_id": "area-452",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-452.GS301",
+    "equipment_id_code": "452.GS301",
+    "asset_name": "Screw conveyor greasing system",
+    "area_id": "area-452",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-452.GS331",
+    "equipment_id_code": "452.GS331",
+    "asset_name": "Screw conveyor greasing system",
+    "area_id": "area-452",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-452.GS481",
+    "equipment_id_code": "452.GS481",
+    "asset_name": "Screw conveyor greasing system",
+    "area_id": "area-452",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-452.RF202",
+    "equipment_id_code": "452.RF202",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-452",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-452.RF611",
+    "equipment_id_code": "452.RF611",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-452",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-452.RF651",
+    "equipment_id_code": "452.RF651",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-452",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-452.SC120",
+    "equipment_id_code": "452.SC120",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-452",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-452.SC150",
+    "equipment_id_code": "452.SC150",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-452",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-452.SC300",
+    "equipment_id_code": "452.SC300",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-452",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-452.SC330",
+    "equipment_id_code": "452.SC330",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-452",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-452.SC460",
+    "equipment_id_code": "452.SC460",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-452",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-452.SC480",
+    "equipment_id_code": "452.SC480",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-452",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-452.PE500",
+    "equipment_id_code": "452.PE500",
+    "asset_name": "By-pass palletizer",
+    "area_id": "area-452",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-461.RF085",
+    "equipment_id_code": "461.RF085",
+    "asset_name": "Kreisel air sluice",
+    "area_id": "area-461",
+    "gearbox_brand": null,
+    "op_temp_c": 44,
+    "annual_rh_actual": 3296
+  },
+  {
+    "id": "eq-461.FD090",
+    "equipment_id_code": "461.FD090",
+    "asset_name": "Double feed screw",
+    "area_id": "area-461",
+    "gearbox_brand": null,
+    "op_temp_c": 52,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-461.HY110",
+    "equipment_id_code": "461.HY110",
+    "asset_name": "Mill Hydraulic tensioning system",
+    "area_id": "area-461",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-461.LQ120",
+    "equipment_id_code": "461.LQ120",
+    "asset_name": "Roller lubrication pump unit",
+    "area_id": "area-461",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-461.LQ145",
+    "equipment_id_code": "461.LQ145",
+    "asset_name": "Mill Gear lubrication pump unit",
+    "area_id": "area-461",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-461.MD152",
+    "equipment_id_code": "461.MD152",
+    "asset_name": "Dynamic Separator Main drive, lubrication LQ",
+    "area_id": "area-461",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-461.SC301",
+    "equipment_id_code": "461.SC301",
+    "asset_name": "Filter screw conveyor incl. drive",
+    "area_id": "area-461",
+    "gearbox_brand": "SEW",
+    "op_temp_c": 46,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-461.RF302",
+    "equipment_id_code": "461.RF302",
+    "asset_name": "Rotary air lock",
+    "area_id": "area-461",
+    "gearbox_brand": null,
+    "op_temp_c": 45,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-461.SC303",
+    "equipment_id_code": "461.SC303",
+    "asset_name": "Filter screw conveyor incl. drive",
+    "area_id": "area-461",
+    "gearbox_brand": "SEW",
+    "op_temp_c": 51,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-461.RF304",
+    "equipment_id_code": "461.RF304",
+    "asset_name": "Rotary air lock incl. drive",
+    "area_id": "area-461",
+    "gearbox_brand": null,
+    "op_temp_c": 45,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-461.FN400",
+    "equipment_id_code": "461.FN400",
+    "asset_name": "Coal Mill filter fan",
+    "area_id": "area-461",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-461.SC500",
+    "equipment_id_code": "461.SC500",
+    "asset_name": "Screw conveyor UMR 710mm Incl. Drive",
+    "area_id": "area-461",
+    "gearbox_brand": "SEW",
+    "op_temp_c": 44,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-461.SM505",
+    "equipment_id_code": "461.SM505",
+    "asset_name": "Sampler inspection MS",
+    "area_id": "area-461",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-461.RF510",
+    "equipment_id_code": "461.RF510",
+    "asset_name": "Air sluice UL 200/620 Incl. drive",
+    "area_id": "area-461",
+    "gearbox_brand": null,
+    "op_temp_c": 44,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-461.RF536",
+    "equipment_id_code": "461.RF536",
+    "asset_name": "Air sluices PAM F-200 incl. drive",
+    "area_id": "area-461",
+    "gearbox_brand": null,
+    "op_temp_c": 45,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-462.RF085",
+    "equipment_id_code": "462.RF085",
+    "asset_name": "Self cleaning sluice mrk Kreisel",
+    "area_id": "area-462",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": 3642
+  },
+  {
+    "id": "eq-462.FD090",
+    "equipment_id_code": "462.FD090",
+    "asset_name": "Double feed screw 290 mm Incl. drive",
+    "area_id": "area-462",
+    "gearbox_brand": null,
+    "op_temp_c": 52,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-462.FN400",
+    "equipment_id_code": "462.FN400",
+    "asset_name": "Coal Mill filter fan",
+    "area_id": "area-462",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-462.SC500",
+    "equipment_id_code": "462.SC500",
+    "asset_name": "Screw conveyor UMR",
+    "area_id": "area-462",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-462.RF510",
+    "equipment_id_code": "462.RF510",
+    "asset_name": "Air sluice UL-200/620",
+    "area_id": "area-462",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-462.SC550",
+    "equipment_id_code": "462.SC550",
+    "asset_name": "Screw conveyor TUBE-UMR 710",
+    "area_id": "area-462",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-462.HY110",
+    "equipment_id_code": "462.HY110",
+    "asset_name": "Mill Hydraulic tensioning system",
+    "area_id": "area-462",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-462.LQ120",
+    "equipment_id_code": "462.LQ120",
+    "asset_name": "Roller lubrication",
+    "area_id": "area-462",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-462.LQ145",
+    "equipment_id_code": "462.LQ145",
+    "asset_name": "Mill Gear lubrication pump unit",
+    "area_id": "area-462",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-462.MD152",
+    "equipment_id_code": "462.MD152",
+    "asset_name": "Dynamic Separator Main drive, lubrication LQ",
+    "area_id": "area-462",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-462.SC301",
+    "equipment_id_code": "462.SC301",
+    "asset_name": "Screw conveyor",
+    "area_id": "area-462",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-462.RF302",
+    "equipment_id_code": "462.RF302",
+    "asset_name": "Rotary air lock",
+    "area_id": "area-462",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-462.SC303",
+    "equipment_id_code": "462.SC303",
+    "asset_name": "Screw conveyor",
+    "area_id": "area-462",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-462.RF304",
+    "equipment_id_code": "462.RF304",
+    "asset_name": "Rotary air lock",
+    "area_id": "area-462",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-465.RL570",
+    "equipment_id_code": "465.RL570",
+    "asset_name": "Rotary scale",
+    "area_id": "area-465",
+    "gearbox_brand": null,
+    "op_temp_c": 50,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-465.RL620",
+    "equipment_id_code": "465.RL620",
+    "asset_name": "Rotary scale",
+    "area_id": "area-465",
+    "gearbox_brand": null,
+    "op_temp_c": 50,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-465.BL630",
+    "equipment_id_code": "465.BL630",
+    "asset_name": "Rotary blower",
+    "area_id": "area-465",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-465.BL635",
+    "equipment_id_code": "465.BL635",
+    "asset_name": "Rotary blower",
+    "area_id": "area-465",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-465.BL580",
+    "equipment_id_code": "465.BL580",
+    "asset_name": "Rotary blower",
+    "area_id": "area-465",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-465.BL585",
+    "equipment_id_code": "465.BL585",
+    "asset_name": "Rotary blower",
+    "area_id": "area-465",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-466.BL580",
+    "equipment_id_code": "466.BL580",
+    "asset_name": "Rotary blower",
+    "area_id": "area-466",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-466.BL585",
+    "equipment_id_code": "466.BL585",
+    "asset_name": "Rotary blower",
+    "area_id": "area-466",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-466.BL630",
+    "equipment_id_code": "466.BL630",
+    "asset_name": "Rotary blower",
+    "area_id": "area-466",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-466.BL635",
+    "equipment_id_code": "466.BL635",
+    "asset_name": "Rotary blower",
+    "area_id": "area-466",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-466.RL570",
+    "equipment_id_code": "466.RL570",
+    "asset_name": "Rotary scale",
+    "area_id": "area-466",
+    "gearbox_brand": null,
+    "op_temp_c": 50,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-466.RL620",
+    "equipment_id_code": "466.RL620",
+    "asset_name": "Rotary scale",
+    "area_id": "area-466",
+    "gearbox_brand": null,
+    "op_temp_c": 50,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-471.AC100",
+    "equipment_id_code": "471.AC100",
+    "asset_name": "Pan Conveyor",
+    "area_id": "area-471",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-471.CV200",
+    "equipment_id_code": "471.CV200",
+    "asset_name": "Drag Chain",
+    "area_id": "area-471",
+    "gearbox_brand": "BREVINI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-471.SC151",
+    "equipment_id_code": "471.SC151",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-471",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-472.AC100",
+    "equipment_id_code": "472.AC100",
+    "asset_name": "Pan Conveyor",
+    "area_id": "area-472",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-472.SC151",
+    "equipment_id_code": "472.SC151",
+    "asset_name": "Screw Conveyor",
+    "area_id": "area-472",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-472.CV200",
+    "equipment_id_code": "472.CV200",
+    "asset_name": "Drag Chain",
+    "area_id": "area-472",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-481.RF411",
+    "equipment_id_code": "481.RF411",
+    "asset_name": "Rotary Feeder",
+    "area_id": "area-481",
+    "gearbox_brand": "SEW",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-481.BC600",
+    "equipment_id_code": "481.BC600",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-481",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 45,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-481.BC270",
+    "equipment_id_code": "481.BC270",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-481",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-481.BC520",
+    "equipment_id_code": "481.BC520",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-481",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-481.BC580",
+    "equipment_id_code": "481.BC580",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-481",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 45,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-481.BC150",
+    "equipment_id_code": "481.BC150",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-481",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 46,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-481.BC160",
+    "equipment_id_code": "481.BC160",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-481",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 46,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-481.BC170",
+    "equipment_id_code": "481.BC170",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-481",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 46,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-481.RF381",
+    "equipment_id_code": "481.RF381",
+    "asset_name": "Air-lock",
+    "area_id": "area-481",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-481.RF651",
+    "equipment_id_code": "481.RF651",
+    "asset_name": "Air-lock",
+    "area_id": "area-481",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-481.RF671",
+    "equipment_id_code": "481.RF671",
+    "asset_name": "Air-lock",
+    "area_id": "area-481",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-481.CV700",
+    "equipment_id_code": "481.CV700",
+    "asset_name": "Drag Chain",
+    "area_id": "area-481",
+    "gearbox_brand": null,
+    "op_temp_c": 68,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-481.RF711",
+    "equipment_id_code": "481.RF711",
+    "asset_name": "Air-lock",
+    "area_id": "area-481",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-481.RF726",
+    "equipment_id_code": "481.RF726",
+    "asset_name": "Air-lock",
+    "area_id": "area-481",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-481.BC730",
+    "equipment_id_code": "481.BC730",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-481",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 46,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-481.BC740",
+    "equipment_id_code": "481.BC740",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-481",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 46,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-481.SE250",
+    "equipment_id_code": "481.SE250",
+    "asset_name": "Silo discharge unit",
+    "area_id": "area-481",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-482.BC600",
+    "equipment_id_code": "482.BC600",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-482",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 48,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-482.BC150",
+    "equipment_id_code": "482.BC150",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-482",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 46,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-482.BC160",
+    "equipment_id_code": "482.BC160",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-482",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 46,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-482.BC170",
+    "equipment_id_code": "482.BC170",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-482",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 46,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-482.BC580",
+    "equipment_id_code": "482.BC580",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-482",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 45,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-482.RF651",
+    "equipment_id_code": "482.RF651",
+    "asset_name": "Air-lock",
+    "area_id": "area-482",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-482.RF671",
+    "equipment_id_code": "482.RF671",
+    "asset_name": "Air-lock",
+    "area_id": "area-482",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-511.WF150",
+    "equipment_id_code": "511.WF150",
+    "asset_name": "Dosimat feeder",
+    "area_id": "area-511",
+    "gearbox_brand": null,
+    "op_temp_c": 50,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-511.SX151",
+    "equipment_id_code": "511.SX151",
+    "asset_name": "Chain scraper for dosimat feeder",
+    "area_id": "area-511",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-511.WF250",
+    "equipment_id_code": "511.WF250",
+    "asset_name": "Dosax weigh feeder",
+    "area_id": "area-511",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-511.WF350",
+    "equipment_id_code": "511.WF350",
+    "asset_name": "Dosimat feeder",
+    "area_id": "area-511",
+    "gearbox_brand": null,
+    "op_temp_c": 40,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-511.SX351",
+    "equipment_id_code": "511.SX351",
+    "asset_name": "Chain scraper for dosimat feeder",
+    "area_id": "area-511",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-511.BC600",
+    "equipment_id_code": "511.BC600",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-511",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 45,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-511.RF661",
+    "equipment_id_code": "511.RF661",
+    "asset_name": "Air-lock",
+    "area_id": "area-511",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-512.WF150",
+    "equipment_id_code": "512.WF150",
+    "asset_name": "Dosimat feeder",
+    "area_id": "area-512",
+    "gearbox_brand": null,
+    "op_temp_c": 50,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-512.SX151",
+    "equipment_id_code": "512.SX151",
+    "asset_name": "Chain scraper for dosimat feeder",
+    "area_id": "area-512",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-512.WF250",
+    "equipment_id_code": "512.WF250",
+    "asset_name": "Dosax weigh feeder",
+    "area_id": "area-512",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-512.WF350",
+    "equipment_id_code": "512.WF350",
+    "asset_name": "Dosimat feeder",
+    "area_id": "area-512",
+    "gearbox_brand": null,
+    "op_temp_c": 40,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-512.SX351",
+    "equipment_id_code": "512.SX351",
+    "asset_name": "Chain scraper for dosimat feeder",
+    "area_id": "area-512",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-512.BC600",
+    "equipment_id_code": "512.BC600",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-512",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 45,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-512.RF661",
+    "equipment_id_code": "512.RF661",
+    "asset_name": "Air-lock",
+    "area_id": "area-512",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-513.WF150",
+    "equipment_id_code": "513.WF150",
+    "asset_name": "Dosimat feeder",
+    "area_id": "area-513",
+    "gearbox_brand": null,
+    "op_temp_c": 40,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-513.SX151",
+    "equipment_id_code": "513.SX151",
+    "asset_name": "Chain scraper for dosimat feeder",
+    "area_id": "area-513",
+    "gearbox_brand": null,
+    "op_temp_c": 40,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-513.WF250",
+    "equipment_id_code": "513.WF250",
+    "asset_name": "Dosax weigh feeder",
+    "area_id": "area-513",
+    "gearbox_brand": null,
+    "op_temp_c": 40,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-513.WF350",
+    "equipment_id_code": "513.WF350",
+    "asset_name": "Dosimat feeder",
+    "area_id": "area-513",
+    "gearbox_brand": null,
+    "op_temp_c": 40,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-513.SX351",
+    "equipment_id_code": "513.SX351",
+    "asset_name": "Chain scraper for dosimat feeder",
+    "area_id": "area-513",
+    "gearbox_brand": null,
+    "op_temp_c": 40,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-513.BC600",
+    "equipment_id_code": "513.BC600",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-513",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 40,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-513.RF661",
+    "equipment_id_code": "513.RF661",
+    "asset_name": "Air-lock",
+    "area_id": "area-513",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-514.WF150",
+    "equipment_id_code": "514.WF150",
+    "asset_name": "Dosimat feeder",
+    "area_id": "area-514",
+    "gearbox_brand": null,
+    "op_temp_c": 50,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-514.SX151",
+    "equipment_id_code": "514.SX151",
+    "asset_name": "Chain scraper for dosimat feeder",
+    "area_id": "area-514",
+    "gearbox_brand": null,
+    "op_temp_c": 40,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-514.WF250",
+    "equipment_id_code": "514.WF250",
+    "asset_name": "Dosax weigh feeder",
+    "area_id": "area-514",
+    "gearbox_brand": null,
+    "op_temp_c": 36,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-514.WF350",
+    "equipment_id_code": "514.WF350",
+    "asset_name": "Dosimat feeder",
+    "area_id": "area-514",
+    "gearbox_brand": null,
+    "op_temp_c": 40,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-514.SX351",
+    "equipment_id_code": "514.SX351",
+    "asset_name": "Chain scraper for dosimat feeder",
+    "area_id": "area-514",
+    "gearbox_brand": null,
+    "op_temp_c": 40,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-514.BC600",
+    "equipment_id_code": "514.BC600",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-514",
+    "gearbox_brand": "ROSSI",
+    "op_temp_c": 40,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-514.RF661",
+    "equipment_id_code": "514.RF661",
+    "asset_name": "Air-lock",
+    "area_id": "area-514",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-531.LQ110",
+    "equipment_id_code": "531.LQ110",
+    "asset_name": "Inlet bearing lubrication",
+    "area_id": "area-531",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-531.LQ120",
+    "equipment_id_code": "531.LQ120",
+    "asset_name": "Outlet bearing lubrication",
+    "area_id": "area-531",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-531.LQ145",
+    "equipment_id_code": "531.LQ145",
+    "asset_name": "Gear lubrication unit",
+    "area_id": "area-531",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-531.AD147",
+    "equipment_id_code": "531.AD147",
+    "asset_name": "Auxiliary drive",
+    "area_id": "area-531",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-531.BE220",
+    "equipment_id_code": "531.BE220",
+    "asset_name": "Bucket Elevator",
+    "area_id": "area-531",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-531.LQ305",
+    "equipment_id_code": "531.LQ305",
+    "asset_name": "O-sepa separator",
+    "area_id": "area-531",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-531.MD302",
+    "equipment_id_code": "531.MD302",
+    "asset_name": "O-sepa separator main drive",
+    "area_id": "area-531",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-531.RF364",
+    "equipment_id_code": "531.RF364",
+    "asset_name": "Rotary air-lock",
+    "area_id": "area-531",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-531.SC501",
+    "equipment_id_code": "531.SC501",
+    "asset_name": "Filter screw conveyor",
+    "area_id": "area-531",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-531.RF502",
+    "equipment_id_code": "531.RF502",
+    "asset_name": "Rotary air-lock",
+    "area_id": "area-531",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-532.LQ110",
+    "equipment_id_code": "532.LQ110",
+    "asset_name": "Inlet bearing lubrication",
+    "area_id": "area-532",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-532.LQ120",
+    "equipment_id_code": "532.LQ120",
+    "asset_name": "Outlet bearing lubrication",
+    "area_id": "area-532",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-532.LQ145",
+    "equipment_id_code": "532.LQ145",
+    "asset_name": "Gear lubrication unit",
+    "area_id": "area-532",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": 4874.0
+  },
+  {
+    "id": "eq-532.AD147",
+    "equipment_id_code": "532.AD147",
+    "asset_name": "Auxiliary drive",
+    "area_id": "area-532",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-532.BE220",
+    "equipment_id_code": "532.BE220",
+    "asset_name": "Bucket Elevator",
+    "area_id": "area-532",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-532.RF241",
+    "equipment_id_code": "532.RF241",
+    "asset_name": "Air-lock",
+    "area_id": "area-532",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-532.LQ305",
+    "equipment_id_code": "532.LQ305",
+    "asset_name": "O-sepa separator",
+    "area_id": "area-532",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-532.MD302",
+    "equipment_id_code": "532.MD302",
+    "asset_name": "O-sepa separator main drive",
+    "area_id": "area-532",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-532.RF364",
+    "equipment_id_code": "532.RF364",
+    "asset_name": "Rotary air-lock",
+    "area_id": "area-532",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-532.SC501",
+    "equipment_id_code": "532.SC501",
+    "asset_name": "Filter screw conveyor",
+    "area_id": "area-532",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-532.RF502",
+    "equipment_id_code": "532.RF502",
+    "asset_name": "Rotary air-lock",
+    "area_id": "area-532",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-533.LQ110",
+    "equipment_id_code": "533.LQ110",
+    "asset_name": "Inlet bearing lubrication",
+    "area_id": "area-533",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-533.LQ120",
+    "equipment_id_code": "533.LQ120",
+    "asset_name": "Outlet bearing lubrication",
+    "area_id": "area-533",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-533.LQ145",
+    "equipment_id_code": "533.LQ145",
+    "asset_name": "Gear lubrication unit",
+    "area_id": "area-533",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": 4459
+  },
+  {
+    "id": "eq-533.AD147",
+    "equipment_id_code": "533.AD147",
+    "asset_name": "Auxiliary drive",
+    "area_id": "area-533",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-533.BE220",
+    "equipment_id_code": "533.BE220",
+    "asset_name": "Bucket Elevator",
+    "area_id": "area-533",
+    "gearbox_brand": "Flender",
+    "op_temp_c": 47,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-533.RF241",
+    "equipment_id_code": "533.RF241",
+    "asset_name": "Air-lock",
+    "area_id": "area-533",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-533.MD302",
+    "equipment_id_code": "533.MD302",
+    "asset_name": "Sepax separator main drive",
+    "area_id": "area-533",
+    "gearbox_brand": "Flender",
+    "op_temp_c": 45,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-533.RF311",
+    "equipment_id_code": "533.RF311",
+    "asset_name": "Rotary air lock",
+    "area_id": "area-533",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-533.RF321",
+    "equipment_id_code": "533.RF321",
+    "asset_name": "Rotary air-lock",
+    "area_id": "area-533",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-533.RF331",
+    "equipment_id_code": "533.RF331",
+    "asset_name": "Rotary air-lock",
+    "area_id": "area-533",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-533.RF341",
+    "equipment_id_code": "533.RF341",
+    "asset_name": "Rotary air-lock",
+    "area_id": "area-533",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-533.RF361",
+    "equipment_id_code": "533.RF361",
+    "asset_name": "Air-lock",
+    "area_id": "area-533",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-533.SC501",
+    "equipment_id_code": "533.SC501",
+    "asset_name": "Screw conveyor",
+    "area_id": "area-533",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-533.RF502",
+    "equipment_id_code": "533.RF502",
+    "asset_name": "Rotary air lock",
+    "area_id": "area-533",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-534.LQ110",
+    "equipment_id_code": "534.LQ110",
+    "asset_name": "Inlet bearing lubrication",
+    "area_id": "area-534",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-534.LQ120",
+    "equipment_id_code": "534.LQ120",
+    "asset_name": "Outlet bearing lubrication",
+    "area_id": "area-534",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-534.LQ145",
+    "equipment_id_code": "534.LQ145",
+    "asset_name": "Gearbox lubrication unit",
+    "area_id": "area-534",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": 4251
+  },
+  {
+    "id": "eq-534.AD147",
+    "equipment_id_code": "534.AD147",
+    "asset_name": "Auxiliary drive",
+    "area_id": "area-534",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-534.BE220",
+    "equipment_id_code": "534.BE220",
+    "asset_name": "Bucket Elevator",
+    "area_id": "area-534",
+    "gearbox_brand": "Flender",
+    "op_temp_c": 50,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-534.RF241",
+    "equipment_id_code": "534.RF241",
+    "asset_name": "Air-lock",
+    "area_id": "area-534",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-534.MD302",
+    "equipment_id_code": "534.MD302",
+    "asset_name": "Sepax separator main drive",
+    "area_id": "area-534",
+    "gearbox_brand": "Flender",
+    "op_temp_c": 47,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-534.RF311",
+    "equipment_id_code": "534.RF311",
+    "asset_name": "Rotary air lock",
+    "area_id": "area-534",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-534.RF321",
+    "equipment_id_code": "534.RF321",
+    "asset_name": "Rotary air-lock",
+    "area_id": "area-534",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-534.RF331",
+    "equipment_id_code": "534.RF331",
+    "asset_name": "Rotary air-lock",
+    "area_id": "area-534",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-534.RF341",
+    "equipment_id_code": "534.RF341",
+    "asset_name": "Rotary air-lock",
+    "area_id": "area-534",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-534.RF361",
+    "equipment_id_code": "534.RF361",
+    "asset_name": "Air-lock",
+    "area_id": "area-534",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-534.SC501",
+    "equipment_id_code": "534.SC501",
+    "asset_name": "Screw conveyor",
+    "area_id": "area-534",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-534.RF502",
+    "equipment_id_code": "534.RF502",
+    "asset_name": "Rotary air lock",
+    "area_id": "area-534",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-541.RF171",
+    "equipment_id_code": "541.RF171",
+    "asset_name": "Air-lock",
+    "area_id": "area-541",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-541.BE180",
+    "equipment_id_code": "541.BE180",
+    "asset_name": "Bucket Elevator",
+    "area_id": "area-541",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-541.SM830",
+    "equipment_id_code": "541.SM830",
+    "asset_name": "Sampler automatic",
+    "area_id": "area-541",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-542.RF171",
+    "equipment_id_code": "542.RF171",
+    "asset_name": "Air-lock",
+    "area_id": "area-542",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-542.BE180",
+    "equipment_id_code": "542.BE180",
+    "asset_name": "Bucket Elevator",
+    "area_id": "area-542",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-542.SM830",
+    "equipment_id_code": "542.SM830",
+    "asset_name": "Sampler automatic",
+    "area_id": "area-542",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-543.RF141",
+    "equipment_id_code": "543.RF141",
+    "asset_name": "Air-lock",
+    "area_id": "area-543",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-543.RF171",
+    "equipment_id_code": "543.RF171",
+    "asset_name": "Air-lock",
+    "area_id": "area-543",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-543.BE180",
+    "equipment_id_code": "543.BE180",
+    "asset_name": "Bucket Elevator",
+    "area_id": "area-543",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-543.SM830",
+    "equipment_id_code": "543.SM830",
+    "asset_name": "Sampler automatic",
+    "area_id": "area-543",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-544.RF141",
+    "equipment_id_code": "544.RF141",
+    "asset_name": "Air-lock",
+    "area_id": "area-544",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-544.RF171",
+    "equipment_id_code": "544.RF171",
+    "asset_name": "Air-lock",
+    "area_id": "area-544",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-544.BE180",
+    "equipment_id_code": "544.BE180",
+    "asset_name": "Bucket Elevator",
+    "area_id": "area-544",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-544.SM830",
+    "equipment_id_code": "544.SM830",
+    "asset_name": "Sampler automatic",
+    "area_id": "area-544",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-611.BL300",
+    "equipment_id_code": "611.BL300",
+    "asset_name": "Rotary blower",
+    "area_id": "area-611",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-621.RF611",
+    "equipment_id_code": "621.RF611",
+    "asset_name": "Air-lock",
+    "area_id": "area-611",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-622.RF611",
+    "equipment_id_code": "622.RF611",
+    "asset_name": "Air-lock",
+    "area_id": "area-611",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-641.BC611",
+    "equipment_id_code": "641.BC611",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-611",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-642.BC611",
+    "equipment_id_code": "642.BC611",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-611",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-643.BC611",
+    "equipment_id_code": "643.BC611",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-611",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-644.BC611",
+    "equipment_id_code": "644.BC611",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-611",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-646.BC611",
+    "equipment_id_code": "646.BC611",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-611",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-612.BL300",
+    "equipment_id_code": "612.BL300",
+    "asset_name": "Rotary blower",
+    "area_id": "area-612",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-613.BL300",
+    "equipment_id_code": "613.BL300",
+    "asset_name": "Rotary blower",
+    "area_id": "area-613",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-614.BL300",
+    "equipment_id_code": "614.BL300",
+    "asset_name": "Rotary blower",
+    "area_id": "area-614",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-621.BK020",
+    "equipment_id_code": "621.BK020",
+    "asset_name": "Bulk loading device",
+    "area_id": "area-621",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-621.BK040",
+    "equipment_id_code": "621.BK040",
+    "asset_name": "Bulk loading device",
+    "area_id": "area-621",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-621.RF091",
+    "equipment_id_code": "621.RF091",
+    "asset_name": "Air-lock",
+    "area_id": "area-621",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-621.RF191",
+    "equipment_id_code": "621.RF191",
+    "asset_name": "Air-lock",
+    "area_id": "area-621",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-621.RF291",
+    "equipment_id_code": "621.RF291",
+    "asset_name": "Air-lock",
+    "area_id": "area-621",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-621.RF621",
+    "equipment_id_code": "621.RF621",
+    "asset_name": "Air-lock",
+    "area_id": "area-621",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-621.RF631",
+    "equipment_id_code": "621.RF631",
+    "asset_name": "Air-lock",
+    "area_id": "area-621",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-622.BK020",
+    "equipment_id_code": "622.BK020",
+    "asset_name": "Bulk loading device",
+    "area_id": "area-622",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-622.BK040",
+    "equipment_id_code": "622.BK040",
+    "asset_name": "Bulk loading device",
+    "area_id": "area-622",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-622.RF091",
+    "equipment_id_code": "622.RF091",
+    "asset_name": "Air-lock",
+    "area_id": "area-622",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-622.RF191",
+    "equipment_id_code": "622.RF191",
+    "asset_name": "Air-lock",
+    "area_id": "area-622",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-622.RF291",
+    "equipment_id_code": "622.RF291",
+    "asset_name": "Air-lock",
+    "area_id": "area-622",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-622.RF621",
+    "equipment_id_code": "622.RF621",
+    "asset_name": "Air-lock",
+    "area_id": "area-622",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-622.RF631",
+    "equipment_id_code": "622.RF631",
+    "asset_name": "Air-lock",
+    "area_id": "area-622",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-641.BE050",
+    "equipment_id_code": "641.BE050",
+    "asset_name": "Bucket elevator",
+    "area_id": "area-641",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-641.RF162",
+    "equipment_id_code": "641.RF162",
+    "asset_name": "Air-lock",
+    "area_id": "area-641",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-641.RF136",
+    "equipment_id_code": "641.RF136",
+    "asset_name": "Rotary feeder",
+    "area_id": "area-641",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-641.PU302",
+    "equipment_id_code": "641.PU302",
+    "asset_name": "Vacuum pump",
+    "area_id": "area-641",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-641.PM100",
+    "equipment_id_code": "641.PM100",
+    "asset_name": "Rotary packing machine",
+    "area_id": "area-641",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": 3588
+  },
+  {
+    "id": "eq-641.BC107",
+    "equipment_id_code": "641.BC107",
+    "asset_name": "Evacuation Belt",
+    "area_id": "area-641",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-641.BN433",
+    "equipment_id_code": "641.BN433",
+    "asset_name": "Bag cleaning belt",
+    "area_id": "area-641",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-641.BW410",
+    "equipment_id_code": "641.BW410",
+    "asset_name": "VENTOCHECK",
+    "area_id": "area-641",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-641.TP415",
+    "equipment_id_code": "641.TP415",
+    "asset_name": "Bag reject belt",
+    "area_id": "area-641",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-641.BC610",
+    "equipment_id_code": "641.BC610",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-641",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-641.BD640",
+    "equipment_id_code": "641.BD640",
+    "asset_name": "Belt diverter",
+    "area_id": "area-641",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-641.LM210",
+    "equipment_id_code": "641.LM210",
+    "asset_name": "Horizontal belt",
+    "area_id": "area-641",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-641.LM200",
+    "equipment_id_code": "641.LM200",
+    "asset_name": "Horizontal belt",
+    "area_id": "area-641",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-641.FD320",
+    "equipment_id_code": "641.FD320",
+    "asset_name": "Noriamat",
+    "area_id": "area-641",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-641.RS420",
+    "equipment_id_code": "641.RS420",
+    "asset_name": "Paper Screen",
+    "area_id": "area-641",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-641.SC443",
+    "equipment_id_code": "641.SC443",
+    "asset_name": "Screw conveyor",
+    "area_id": "area-641",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-641.AP300",
+    "equipment_id_code": "641.AP300",
+    "asset_name": "Bag Applicator",
+    "area_id": "area-641",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-642.BE050",
+    "equipment_id_code": "642.BE050",
+    "asset_name": "Bucket elevator",
+    "area_id": "area-642",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-642.RF162",
+    "equipment_id_code": "642.RF162",
+    "asset_name": "Air-lock",
+    "area_id": "area-642",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-642.RF136",
+    "equipment_id_code": "642.RF136",
+    "asset_name": "Rotary feeder",
+    "area_id": "area-642",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-642.PU302",
+    "equipment_id_code": "642.PU302",
+    "asset_name": "Vacuum pump",
+    "area_id": "area-642",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-642.PM100",
+    "equipment_id_code": "642.PM100",
+    "asset_name": "Rotary packing machine",
+    "area_id": "area-642",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": 3967
+  },
+  {
+    "id": "eq-642.BC107",
+    "equipment_id_code": "642.BC107",
+    "asset_name": "Evacuation Belt",
+    "area_id": "area-642",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-642.BN433",
+    "equipment_id_code": "642.BN433",
+    "asset_name": "Bag cleaning belt",
+    "area_id": "area-642",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-642.BW410",
+    "equipment_id_code": "642.BW410",
+    "asset_name": "VENTOCHECK",
+    "area_id": "area-642",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-642.TP415",
+    "equipment_id_code": "642.TP415",
+    "asset_name": "Bag reject belt",
+    "area_id": "area-642",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-642.BC610",
+    "equipment_id_code": "642.BC610",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-642",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-642.BD640",
+    "equipment_id_code": "642.BD640",
+    "asset_name": "Belt diverter",
+    "area_id": "area-642",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-642.LM210",
+    "equipment_id_code": "642.LM210",
+    "asset_name": "Horizontal belt",
+    "area_id": "area-642",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-642.LM200",
+    "equipment_id_code": "642.LM200",
+    "asset_name": "Horizontal belt",
+    "area_id": "area-642",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-642.FD320",
+    "equipment_id_code": "642.FD320",
+    "asset_name": "Noriamat",
+    "area_id": "area-642",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-642.RS420",
+    "equipment_id_code": "642.RS420",
+    "asset_name": "Paper Screen",
+    "area_id": "area-642",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-642.SC443",
+    "equipment_id_code": "642.SC443",
+    "asset_name": "Screw conveyor",
+    "area_id": "area-642",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-642.AP300",
+    "equipment_id_code": "642.AP300",
+    "asset_name": "Bag Applicator",
+    "area_id": "area-642",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-643.BE050",
+    "equipment_id_code": "643.BE050",
+    "asset_name": "Bucket elevator",
+    "area_id": "area-643",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-643.RF162",
+    "equipment_id_code": "643.RF162",
+    "asset_name": "Air-lock",
+    "area_id": "area-643",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-643.RF136",
+    "equipment_id_code": "643.RF136",
+    "asset_name": "Rotary feeder",
+    "area_id": "area-643",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-643.PU302",
+    "equipment_id_code": "643.PU302",
+    "asset_name": "Vacuum pump",
+    "area_id": "area-643",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-643.PM100",
+    "equipment_id_code": "643.PM100",
+    "asset_name": "Rotary packing machine",
+    "area_id": "area-643",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": 4037
+  },
+  {
+    "id": "eq-643.BC107",
+    "equipment_id_code": "643.BC107",
+    "asset_name": "Evacuation Belt",
+    "area_id": "area-643",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-643.BN433",
+    "equipment_id_code": "643.BN433",
+    "asset_name": "Bag cleaning belt",
+    "area_id": "area-643",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-643.BW410",
+    "equipment_id_code": "643.BW410",
+    "asset_name": "VENTOCHECK",
+    "area_id": "area-643",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-643.TP415",
+    "equipment_id_code": "643.TP415",
+    "asset_name": "Bag reject belt",
+    "area_id": "area-643",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-643.BC610",
+    "equipment_id_code": "643.BC610",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-643",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-643.BD640",
+    "equipment_id_code": "643.BD640",
+    "asset_name": "Belt diverter",
+    "area_id": "area-643",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-643.LM210",
+    "equipment_id_code": "643.LM210",
+    "asset_name": "Horizontal belt",
+    "area_id": "area-643",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-643.LM200",
+    "equipment_id_code": "643.LM200",
+    "asset_name": "Horizontal belt",
+    "area_id": "area-643",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-643.FD320",
+    "equipment_id_code": "643.FD320",
+    "asset_name": "Noriamat",
+    "area_id": "area-643",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-643.RS420",
+    "equipment_id_code": "643.RS420",
+    "asset_name": "Paper Screen",
+    "area_id": "area-643",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-643.SC443",
+    "equipment_id_code": "643.SC443",
+    "asset_name": "Screw conveyor",
+    "area_id": "area-643",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-643.AP300",
+    "equipment_id_code": "643.AP300",
+    "asset_name": "Bag Applicator",
+    "area_id": "area-643",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-644.BE050",
+    "equipment_id_code": "644.BE050",
+    "asset_name": "Bucket elevator",
+    "area_id": "area-644",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-644.RF162",
+    "equipment_id_code": "644.RF162",
+    "asset_name": "Air-lock",
+    "area_id": "area-644",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-644.RF136",
+    "equipment_id_code": "644.RF136",
+    "asset_name": "Rotary feeder",
+    "area_id": "area-644",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-644.PU302",
+    "equipment_id_code": "644.PU302",
+    "asset_name": "Vacuum pump",
+    "area_id": "area-644",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-644.PM100",
+    "equipment_id_code": "644.PM100",
+    "asset_name": "Rotary packing machine",
+    "area_id": "area-644",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": 4042
+  },
+  {
+    "id": "eq-644.BC107",
+    "equipment_id_code": "644.BC107",
+    "asset_name": "Evacuation Belt",
+    "area_id": "area-644",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-644.BN433",
+    "equipment_id_code": "644.BN433",
+    "asset_name": "Bag cleaning belt",
+    "area_id": "area-644",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-644.BW410",
+    "equipment_id_code": "644.BW410",
+    "asset_name": "VENTOCHECK",
+    "area_id": "area-644",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-644.TP415",
+    "equipment_id_code": "644.TP415",
+    "asset_name": "Bag reject belt",
+    "area_id": "area-644",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-644.BC610",
+    "equipment_id_code": "644.BC610",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-644",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-644.BD640",
+    "equipment_id_code": "644.BD640",
+    "asset_name": "Belt diverter",
+    "area_id": "area-644",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-644.LM210",
+    "equipment_id_code": "644.LM210",
+    "asset_name": "Horizontal belt",
+    "area_id": "area-644",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-644.LM200",
+    "equipment_id_code": "644.LM200",
+    "asset_name": "Horizontal belt",
+    "area_id": "area-644",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-644.FD320",
+    "equipment_id_code": "644.FD320",
+    "asset_name": "Noriamat",
+    "area_id": "area-644",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-644.RS420",
+    "equipment_id_code": "644.RS420",
+    "asset_name": "Paper Screen",
+    "area_id": "area-644",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-644.SC443",
+    "equipment_id_code": "644.SC443",
+    "asset_name": "Screw conveyor",
+    "area_id": "area-644",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-644.AP300",
+    "equipment_id_code": "644.AP300",
+    "asset_name": "Bag Applicator",
+    "area_id": "area-644",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-645.BE050",
+    "equipment_id_code": "645.BE050",
+    "asset_name": "Bucket elevator",
+    "area_id": "area-645",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-645.RF162",
+    "equipment_id_code": "645.RF162",
+    "asset_name": "Air-lock",
+    "area_id": "area-645",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-645.RF136",
+    "equipment_id_code": "645.RF136",
+    "asset_name": "Rotary feeder",
+    "area_id": "area-645",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-645.PU302",
+    "equipment_id_code": "645.PU302",
+    "asset_name": "Vacuum pump",
+    "area_id": "area-645",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-645.PM100",
+    "equipment_id_code": "645.PM100",
+    "asset_name": "Rotary packing machine",
+    "area_id": "area-645",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": 3249
+  },
+  {
+    "id": "eq-645.BC107",
+    "equipment_id_code": "645.BC107",
+    "asset_name": "Evacuation Belt",
+    "area_id": "area-645",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-645.BN433",
+    "equipment_id_code": "645.BN433",
+    "asset_name": "Bag cleaning belt",
+    "area_id": "area-645",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-645.BW410",
+    "equipment_id_code": "645.BW410",
+    "asset_name": "VENTOCHECK",
+    "area_id": "area-645",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-645.TP415",
+    "equipment_id_code": "645.TP415",
+    "asset_name": "Bag reject belt",
+    "area_id": "area-645",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-645.BC610",
+    "equipment_id_code": "645.BC610",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-645",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-645.BC611",
+    "equipment_id_code": "645.BC611",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-645",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-645.BD640",
+    "equipment_id_code": "645.BD640",
+    "asset_name": "Belt diverter",
+    "area_id": "area-645",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-645.LM210",
+    "equipment_id_code": "645.LM210",
+    "asset_name": "Horizontal belt",
+    "area_id": "area-645",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-645.LM200",
+    "equipment_id_code": "645.LM200",
+    "asset_name": "Horizontal belt",
+    "area_id": "area-645",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-645.FD320",
+    "equipment_id_code": "645.FD320",
+    "asset_name": "Noriamat",
+    "area_id": "area-645",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-645.RS420",
+    "equipment_id_code": "645.RS420",
+    "asset_name": "Paper Screen",
+    "area_id": "area-645",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-645.SC443",
+    "equipment_id_code": "645.SC443",
+    "asset_name": "Screw conveyor",
+    "area_id": "area-645",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-645.AP300",
+    "equipment_id_code": "645.AP300",
+    "asset_name": "Bag Applicator",
+    "area_id": "area-645",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-646.BE050",
+    "equipment_id_code": "646.BE050",
+    "asset_name": "Bucket elevator",
+    "area_id": "area-646",
+    "gearbox_brand": "Flender",
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-646.RF162",
+    "equipment_id_code": "646.RF162",
+    "asset_name": "Air-lock",
+    "area_id": "area-646",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-646.RF136",
+    "equipment_id_code": "646.RF136",
+    "asset_name": "Rotary feeder",
+    "area_id": "area-646",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-646.PU302",
+    "equipment_id_code": "646.PU302",
+    "asset_name": "Vacuum pump",
+    "area_id": "area-646",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-646.PM100",
+    "equipment_id_code": "646.PM100",
+    "asset_name": "Rotary packing machine",
+    "area_id": "area-646",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": 4030
+  },
+  {
+    "id": "eq-646.BC107",
+    "equipment_id_code": "646.BC107",
+    "asset_name": "Evacuation Belt",
+    "area_id": "area-646",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-646.BN433",
+    "equipment_id_code": "646.BN433",
+    "asset_name": "Bag cleaning belt",
+    "area_id": "area-646",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-646.BW410",
+    "equipment_id_code": "646.BW410",
+    "asset_name": "VENTOCHECK",
+    "area_id": "area-646",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-646.TP415",
+    "equipment_id_code": "646.TP415",
+    "asset_name": "Bag reject belt",
+    "area_id": "area-646",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-646.BC610",
+    "equipment_id_code": "646.BC610",
+    "asset_name": "Belt conveyor",
+    "area_id": "area-646",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-646.BD640",
+    "equipment_id_code": "646.BD640",
+    "asset_name": "Belt diverter",
+    "area_id": "area-646",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-646.LM210",
+    "equipment_id_code": "646.LM210",
+    "asset_name": "Horizontal belt",
+    "area_id": "area-646",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-646.LM200",
+    "equipment_id_code": "646.LM200",
+    "asset_name": "Horizontal belt",
+    "area_id": "area-646",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-646.FD320",
+    "equipment_id_code": "646.FD320",
+    "asset_name": "Noriamat",
+    "area_id": "area-646",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-646.RS420",
+    "equipment_id_code": "646.RS420",
+    "asset_name": "Paper Screen",
+    "area_id": "area-646",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-646.SC443",
+    "equipment_id_code": "646.SC443",
+    "asset_name": "Screw conveyor",
+    "area_id": "area-646",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  },
+  {
+    "id": "eq-646.AP300",
+    "equipment_id_code": "646.AP300",
+    "asset_name": "Bag Applicator",
+    "area_id": "area-646",
+    "gearbox_brand": null,
+    "op_temp_c": null,
+    "annual_rh_actual": null
+  }
+]

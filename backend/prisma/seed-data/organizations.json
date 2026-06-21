@@ -1,0 +1,17 @@
+[
+  {
+    "id": "org-acc",
+    "name": "ACC",
+    "type": "owner"
+  },
+  {
+    "id": "org-rhi",
+    "name": "RHI",
+    "type": "contractor"
+  },
+  {
+    "id": "org-asec",
+    "name": "ASEC",
+    "type": "contractor"
+  }
+]

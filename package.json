@@ -1,0 +1,11 @@
+{
+  "name": "acc-oil-lubrication-system",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": ["backend", "frontend"],
+  "scripts": {
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "db:seed": "npm run db:seed --workspace=backend"
+  }
+}

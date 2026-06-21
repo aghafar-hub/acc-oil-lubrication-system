@@ -1,0 +1,9 @@
+[
+  {"name": "Overdue Lubrication", "autoOrManual": "auto", "defaultPriority": "HIGH"},
+  {"name": "Missed Lubrication", "autoOrManual": "manual", "defaultPriority": "MEDIUM"},
+  {"name": "Incorrect Lubrication", "autoOrManual": "manual", "defaultPriority": "MEDIUM"},
+  {"name": "Repeated Rejection", "autoOrManual": "auto", "defaultPriority": "MEDIUM"},
+  {"name": "Oil Sample Overdue", "autoOrManual": "auto", "defaultPriority": "HIGH"},
+  {"name": "Excess Oil Consumption", "autoOrManual": "manual", "defaultPriority": "LOW"},
+  {"name": "Oil Shortage Risk", "autoOrManual": "manual", "defaultPriority": "MEDIUM"}
+]
