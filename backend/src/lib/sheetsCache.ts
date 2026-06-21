@@ -4,6 +4,8 @@
 // Sheets in the background. A periodic refresh reconciles against manual
 // edits made directly in the Sheet.
 
+import fetch from 'node-fetch';
+
 const SHEETS_API_BASE = process.env.SHEETS_API_BASE!; // the .../exec URL
 const SHEETS_API_KEY = process.env.SHEETS_API_KEY!;
 const REFRESH_INTERVAL_MS = Number(process.env.SHEETS_REFRESH_INTERVAL_MS || 5 * 60 * 1000);
