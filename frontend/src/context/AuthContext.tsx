@@ -1,0 +1,75 @@
+import { createContext, useContext, useEffect, useState } from "react";
+import type { ReactNode } from "react";
+import { api, setUnauthorizedHandler } from "../lib/api";
+import type { AuthUser } from "../types";
+
+interface AuthContextValue {
+  user: AuthUser | null;
+  loading: boolean;
+  mustChangePassword: boolean;
+  login: (email: string, password: string) => Promise<void>;
+  logout: () => void;
+  refreshUser: () => Promise<void>;
+  clearMustChangePassword: () => void;
+}
+
+const AuthContext = createContext<AuthContextValue | undefined>(undefined);
+
+export function AuthProvider({ children }: { children: ReactNode }) {
+  const [user, setUser] = useState<AuthUser | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [mustChangePassword, setMustChangePassword] = useState(false);
+
+  async function refreshUser() {
+    try {
+      const res = await api.get("/auth/me");
+      setUser(res.data.user);
+    } catch {
+      setUser(null);
+    }
+  }
+
+  function logout() {
+    localStorage.removeItem("acc_oil_token");
+    setUser(null);
+  }
+
+  useEffect(() => {
+    // Replaces the old axios response interceptor: any 401 from the Apps
+    // Script backend (expired/invalid session token) logs the user out and
+    // sends them back to the login screen, same as before.
+    setUnauthorizedHandler(() => {
+      logout();
+      window.location.hash = "#/login";
+    });
+
+    const token = localStorage.getItem("acc_oil_token");
+    if (!token) {
+      setLoading(false);
+      return;
+    }
+    refreshUser().finally(() => setLoading(false));
+  }, []);
+
+  async function login(email: string, password: string) {
+    const res = await api.post("/auth/login", { email, password });
+    localStorage.setItem("acc_oil_token", res.data.token);
+    setMustChangePassword(!!res.data.mustChangePassword);
+    await refreshUser();
+  }
+
+  return (
+    <AuthContext.Provider
+      value={{ user, loading, mustChangePassword, login, logout, refreshUser, clearMustChangePassword: () => setMustChangePassword(false) }}
+    >
+      {children}
+    </AuthContext.Provider>
+  );
+}
+
+// eslint-disable-next-line react-refresh/only-export-components -- standard context+hook pairing; only affects dev fast-refresh granularity, not correctness
+export function useAuth() {
+  const ctx = useContext(AuthContext);
+  if (!ctx) throw new Error("useAuth must be used within AuthProvider");
+  return ctx;
+}
